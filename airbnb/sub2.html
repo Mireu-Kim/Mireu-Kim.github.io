@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STAY256 Hanok Guesthouse_RM1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--css-->
+        <link rel="stylesheet" href="./style.css">
+        
+        <!--메테리얼아이콘-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        
+        <!--타이틀 아이콘-->
+        <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+        
+        
+        <style>
+            @media(min-width : 744px) {
+                .footer {
+                    max-width: 696px;
+                    margin: 0 auto;
+                }            
+            
+            @media(min-width : 1124px) {
+                .footer {
+                    max-width: 1080px;
+                    margin: 0 auto;
+                }
+            }
+        </style>      
+        
+        
+        <!--js-->
+        <script src="js/jquery-1.12.3.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                $(".trans-btn").click(function(){
+                    $(".lodging-detail-eng").hide();
+                    $(".lodging-detail-ko").show();
+                })
+            })
+        </script>
+    </head>
+    
+    <body> 
+        
+    <!--로고 및 메뉴-->
+    <div class="sub1-header">
+        <div class="sub1-header-inner">   
+            
+            <!--로고-->
+            <div class="sub1-logo">
+                <a href="index.html">
+                   <img src="img/logo-min.png" class="sub1-logo-min">
+                   <img src="img/logo.png" class="sub1-logo-max">
+                </a>    
+            </div>
+
+            <!--박스-->
+            <div class="sub1-header-container">
+                <div class="sub1-search-box">
+
+                    <div class="sub1-search-box-t">
+                       <div class="sub1-search-box-t-inner">
+                            <div class="sub1-search-location">
+                                <button>
+                                    종로구, 종로구, 한국
+                                </button>    
+                            </div>
+                            <div class="sub1-search-date">
+                                 <button>
+                                    5월 26일 - 28일
+                                </button>   
+                            </div>
+                            <div class="sub1-search-person">
+                                <button>
+                                    게스트 1명
+                                </button>   
+                            </div>
+                            <div class="sub1-search-icon">
+                                <button>
+                                 <span class="material-icons">search</span>
+                                </button>    
+                            </div>                          
+                       </div>   
+                    </div> 
+                 </div>
+
+                <!--메뉴-->
+                <div class="sub1-nav">
+                    <div class="sub1-nav-inner">
+                        <ul class="sub1-nav-menu">
+                            <li class="sub1-nav-menu-txt">
+                                <button class="sub1-nav-btn">
+                                    <div class="sub1-nav-btn-img">
+                                      <img src="./img/language.svg">
+                                    </div>    
+                                    <span class="material-icons">
+                                       keyboard_arrow_down
+                                    </span>
+                                </button>
+                            </li>    
+                            <li class="sub1-nav-menu-txt">
+                                <a href="#">도움말</a>
+                            </li>
+                            <li class="sub1-nav-menu-join">
+                                <a href="#">회원가입</a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!---숙소 상세-->    
+    <div class="lodging-datail">
+            
+        <div class="lodging-detail-int">
+            <!--숙소메인사진 모바일에서만-->
+            <div class="lodging-detail-int-m">
+              <img src="img/lodging-detail01.JPG" class="lodging-detail-int-img-m">
+                <div class="lodging-detail-int-m-button">
+                    <button class="share-btn-m">
+                        <span class="material-icons">share</span>
+                    </button>
+                    <button class="favoire-btn-m">
+                        <span class="material-icons">favorite_border</span>
+                    </button>
+                </div>    
+            </div>    
+
+            <!--PC에서만 보이는 숙소사진 (백그라운드 이미지로 삽입)-->
+            <div class="lodging-detail-img-pc-outer">
+                <div class="lodging-detail-img-pc">
+                    <div class="lodging-detail-img-pc01">
+                        <div class="lodging-detail-img-pc01-inner" style="background-image: url(img/lodging-detail01.JPG)"></div>
+                    </div>  
+                    <div class="lodging-detail-img-pc02">
+                         <div class="lodging-detail-img-pc02-container">
+                            <div class="lodging-detail-img-pc02-1">
+                                  <div class="lodging-detail-img-pc02-1-inner" style="background-image: url(img/lodging-detail02.JPG)"></div>
+                            </div>    
+                            <div class="lodging-detail-img-pc02-2">
+                                <div class="lodging-detail-img-pc02-2-inner" style="background-image: url(img/lodging-detail03.JPG)"></div>
+                            </div> 
+                        </div>     
+                    </div> 
+                    <div class="lodging-detail-img-pc03">
+                         <div class="lodging-detail-img-pc03-container">
+                            <div class="lodging-detail-img-pc03-1">
+                                  <div class="lodging-detail-img-pc03-1-inner" style="background-image: url(img/lodging-detail04.JPG)"></div>
+                            </div>    
+                            <div class="lodging-detail-img-pc03-2">
+                                <div class="lodging-detail-img-pc03-2-inner" style="background-image: url(img/lodging-detail05.JPG)"></div>
+                            </div> 
+                        </div>     
+                    </div> 
+                    
+                    <div class="lodging-detail-button">
+                        <div class="lodging-detail-top-button">
+                            <button class="share-btn">공유하기</button>   
+                            <button class="save-btn">
+                                <span class="material-icons">favorite_border</span>
+                                저장
+                            </button>   
+                        </div>    
+                        <button class="view-photo-btn">사진 보기</button>
+                    </div>    
+                </div>
+            </div>  
+
+            <div class="lodging-datail-inner">
+                <div class="lodging-detail-inner-contents">
+                <!--숙소타이틀-->
+                    <div class="lodging-detail-tit">
+                        <h1>STAY256 Hanok Guesthouse_RM1</h1>
+                        <p>종로구</p>
+                        <img src="img/host-profile.JPG">
+                    </div>  
+
+                    <!--숙소정보-->
+                    <div class="lodging-detail-info">
+                        <div class="lodging-detail-info-contents">
+                            <div class="lodging-detail-info-contents-img">
+                                <img src="img/home.png">
+                            </div>    
+                            <div class="lodging-detail-info-txt">
+                                <p>B&b의 객실</p>
+                                <span>인원 1명 · 침실 1개 · 침대 1개 · 욕실 3개</span>    
+                            </div> 
+                        </div>
+                        <div class="lodging-detail-info-contents">
+                            <div class="lodging-detail-info-contents-img">
+                                <img src="img/spray.svg">
+                            </div>    
+                            <div class="lodging-detail-info-txt">
+                                <p>높은 청결도</p>
+                                <span>최근 게스트 12명이 이 숙소가 티 없이 깨끗하다고 후기를 남겼습니다.</span>    
+                            </div> 
+                        </div>    
+                        <div class="lodging-detail-info-contents">
+                            <div class="lodging-detail-info-contents-img">
+                                <img src="img/super-host.png">
+                            </div>    
+                            <div class="lodging-detail-info-txt">
+                                <p>Hyun님은 슈퍼호스트입니다</p>
+                                <span>슈퍼호스트는 풍부한 경험과 높은 평점을 자랑하며 게스트가 숙소에서 편안히 머무를 수 있도록 최선을 다하는 호스트입니다.</span>    
+                            </div>
+                        </div>  
+                        <div class="lodging-detail-info-contents">
+                            <div class="lodging-detail-info-contents-img">
+                                 <img src="img/tag.svg">
+                            </div>    
+                            <div class="lodging-detail-info-txt">
+                                <p>환불정책</p>
+                                <span>5월 15일 12:00 PM 전에 예약을 취소하면 총 숙박 요금의 50% 및 서비스 수수료 전액이 환불됩니다.</span>    
+                            </div>
+                        </div>    
+                    </div>
+
+                    <!--한국어로 번역하기-->
+                    <div class="lodging-detail-lang">
+                        <button class="trans-btn">
+                            이 설명을 한국어 (KR)로 번역하기
+                        </button>
+                        <p class="lodging-detail-eng">Located at the heart of Seoul, STAY256 is a century old Korean traditional housing, Hanok. STAY256 offers antique rooms with traditional furniture. The courtyard is a beautiful place where you can relax and chill, or have some fun with other guests.
+                        At STAY256, you can enjoy tea in a traditional chinaware, in a Korean traditional style living room, while a flatscreen TV with cable channels is readily available.
+                        We will try our best for your comfortable stay, so please feel free to contact us.
+                        </p>
+                        <p class="lodging-detail-ko" style="display: none;">
+                            서울의 중심부에 위치한 STAY256은 한 세기 된 한옥이다. STAY256은 전통적인 가구가 딸린 골동품 방을 제공한다. 안뜰은 휴식을 취하며 더위를 식히거나 다른 손님들과 함께 즐거운 시간을 보낼 수 있는 아름다운 곳이다. STAY256에서는 전통 도자기, 한국식 거실에서 차를 즐길 수 있고, 케이블 채널이 있는 평면 TV도 쉽게 구할 수 있다. 편안한 숙박을 위해 최선을 다 할 테니 언제든지 연락해.                            
+                        </p>
+
+                        <div class="more-info">
+                            <button>이 공간 자세히 보기</button>
+                        </div>
+
+                        <div class="call-host">
+                            <a href="#">호스트에게 연락하기</a>
+                        </div>
+                    </div>
+
+
+                <!--편의시설-->
+                <div class="convenience">
+                    <h2>편의시설</h2>
+                    <div class="convenience-inner">
+                        <div class="convenience-contents">
+                            <img src="img/kitchen.svg">
+                            <p>주방</p>
+                        </div>
+                        <div class="convenience-contents">
+                            <img src="img/breakfast.svg">
+                            <p>아침식사</p>
+                        </div>
+                        <div class="convenience-contents">
+                            <img src="img/wifi.svg">
+                            <p>무선 인터넷</p>
+                        </div>
+                        <div class="convenience-contents">
+                            <img src="img/dry.svg">
+                            <p>건조기</p>
+                        </div>
+                        <div class="convenience-contents">
+                            <img src="img/sensor.png">
+                            <p style="text-decoration: line-through">일산화탄소 경보기</p>
+                        </div>  
+                    </div>    
+                        <p class="covinience-caution">숙소에 일산화탄소 경보기가 설치되어 있는지 호스트가 신고하지 않았습니다.</p>
+                        <button>31개 편의시설 모두 보기</button>
+                </div>
+
+                <!--침대/침구-->
+                <div class="lodging-detail-bed">
+                    <h2>침대/침구</h2>
+                    <div class="lodging-detail-bed-txt">
+                        <img src="img/bed.svg">
+                        <p>1번 침실</p>
+                        <span>싱글침대 1개</span>
+                    </div>
+                </div>  
+
+                <!--날짜선택-->
+                <div class="reservation-date">
+                     <div class="reservation-date-tit">
+                        <h2>예약 가능 여부</h2>
+                        <span>정확한 요금과 예약 가능 여부를 확인하려면 여행 일자를 입력하세요</span>
+                    </div>    
+                    <div class="reservation-cal-container">
+                        <div class="reservation-cal-m">
+                            <h3>2020년 5월</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>일</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>                            
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                    </tr>                          
+                                    <tr>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="reservation-cal-pc">
+                            <h3>2020년 6월</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>일</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>                            
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>                          
+                                    <tr>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                        <td style="background-color: #fff;"> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>    
+                    </div>  
+                </div> 
+                    
+                <!--후기-->    
+                <div class="lodging-grade">
+                    <div class="lodging-grade-tit">
+                        <div class="lodging-grade-tit-inner">
+                            <h3>후기</h3>    
+                            <p>
+                                <span class="material-icons" style="font-size: 18px; margin-right: 5px; vertical-align: top; color:#008489;">grade</span><b>5.0</b>
+                            </p>
+                            <p><b>43</b> 후기</p>
+                        </div>    
+                        <label class="lodging-grade-search-outer">
+                            <div class="lodging-grade-search">
+                                <button>
+                                     <span class="material-icons search-icon">search</span>
+                                </button>    
+                                 <input type="text" placeholder="후기검색">
+                            </div>
+                        </label>
+                    </div> 
+                    
+                    <!---평점-->
+                    <div class="lodging-grade-score">
+                        <div class="lodging-grade-score-contents">
+                            <p class="lodging-grade-score-contents-tit">의사소통</p>
+                            <div class="lodging-grade-score-graph">
+                                <div class="lodging-grade-score-graph-var"></div>
+                               <span>5.0</span>
+                            </div>    
+                        </div>
+                        <div class="lodging-grade-score-contents">
+                            <p class="lodging-grade-score-contents-tit">체크인</p>
+                            <div class="lodging-grade-score-graph">
+                                <div class="lodging-grade-score-graph-var"></div>
+                               <span>5.0</span>
+                            </div>    
+                        </div>  
+                        <div class="lodging-grade-score-contents">
+                            <p class="lodging-grade-score-contents-tit">정확성</p>
+                            <div class="lodging-grade-score-graph">
+                                <div class="lodging-grade-score-graph-var"></div>
+                               <span>5.0</span>
+                            </div>    
+                        </div>    
+                        <div class="lodging-grade-score-contents">
+                            <p class="lodging-grade-score-contents-tit">청결도</p>
+                            <div class="lodging-grade-score-graph">
+                                <div class="lodging-grade-score-graph-var"></div>
+                               <span>5.0</span>
+                            </div>    
+                        </div>    
+                        <div class="lodging-grade-score-contents">
+                            <p class="lodging-grade-score-contents-tit">가치</p>
+                            <div class="lodging-grade-score-graph">
+                                <div class="lodging-grade-score-graph-var"></div>
+                               <span>5.0</span>
+                            </div>    
+                        </div>    
+                        <div class="lodging-grade-score-contents">
+                            <p class="lodging-grade-score-contents-tit">위치</p>
+                            <div class="lodging-grade-score-graph">
+                                <div class="lodging-grade-score-graph-var"></div>
+                               <span>5.0</span>
+                            </div>    
+                        </div> 
+                        
+                        <button>후기 한국어(KR)로 번역하기</button>    
+                    </div>   
+                    
+                    <!--게스트가 남긴 후기들-->
+                    <div class="lodging-grade-guest">
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                    <img src="img/guest-profile01.jpg" class="guest-profile-img">
+                                </a>
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">Eunjeong</p>
+                                    <p class="guest-date">2020년 5월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">세상 친절!</span>
+                        </div>
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                    <img src="img/guest-profile02.png" class="guest-profile-img">
+                                </a>    
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">Yuran</p>
+                                    <p class="guest-date">2020년 3월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">매트리스도 편안하고, 작은 방이지만 제겐 딱 좋은 공간이어서 편하게 쉬다 갑니다. 호스트님도 친절하셨고, 준비되어 있는 센스있는 조식도 잘 즐기고 갑니다! 다음에 또 오고싶어지는 공간이었어요~</span>
+                        </div>
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                   <img src="img/guest-profile03.png" class="guest-profile-img">
+                                </a>    
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">샤이니</p>
+                                    <p class="guest-date">2020년 1월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">조용하고 안전하고 친절하고 청결하고 좋습니다</span>
+                        </div>   
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                    <img src="img/guest-profile04.jpg" class="guest-profile-img">
+                                </a>    
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">So Young</p>
+                                    <p class="guest-date">2019년 12월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">깨끗하고 직접 준비한 소품들 너무 좋았습니다. 다음에 또 머무르고 싶어요</span>
+                        </div>   
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                   <img src="img/guest-profile02.png" class="guest-profile-img">
+                                </a>    
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">Sergio</p>
+                                    <p class="guest-date">2019년 12월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">
+                                깔끔하고 아늑하고 조용하고 편안했습니다! 최고 !
+                            </span>
+                        </div>   
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                    <img src="img/guest-profile05.png" class="guest-profile-img">
+                                </a>    
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">혜인</p>
+                                    <p class="guest-date">2019년 11월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">라텍스 침대와 오리털 이불이 최고였습니다. 시원한 에어컨과 분위기 있는 한국적인 인테리어가 한옥을 느끼고 픈 분들에게 제격인 것 같아요 ;-) 삼청동 조용한 밤과 북적거리는 낮을 동시에 경험할 수 있는 거리에 위치하였고, 한옥 내에는 앉아서 쉴수 있는 벤치들이 좋았어요. 한국에 사는 사람들, 외국에서 한국을 접해드리고 싶다면 꼭 방문하세요!!! 사장님도 너무너무 친절하셔서 제일 좋았습니다 </span>
+                        </div>   
+                        <div class="lodging-grade-guest-contents">
+                            <div class="guest-profile">
+                                <a href="#">
+                                  <img src="img/guest-profile06.jpg" class="guest-profile-img">
+                                </a>    
+                                <div class="guest-profile-txt">
+                                    <p class="guest-name">Goeun</p>
+                                    <p class="guest-date">2019년 10월</p>
+                                </div>    
+                            </div>    
+                            <span class="guest-txt">t was a great pleasure to stay in Hyun's Han Ok. The place is a traditional Korean house with a beautiful small yard in the middle of the house. It is near to many good coffee places and restaurant, and Hyun was friendly and easy to communicate. I would love to revisit the place and highly recommend it!</span>
+                        </div>  
+                        <div class="lodging-grade-score-page-btn">
+                            <ul>
+                                <li class="lodging-grade-score-page-num" style="background-color : rgb(0,132,137);">
+                                    <button style="color : #fff;">1</button>
+                                </li>
+                                <li class="lodging-grade-score-page-num">
+                                    <button>2</button>
+                                </li>
+                                <li class="lodging-grade-score-page-num">
+                                    <button>3</button>
+                                </li>
+                                <li class="lodging-grade-score-page-num">...</li>
+                                <li class="lodging-grade-score-page-num">
+                                    <button>7</button>
+                                </li>
+                                <li>
+                                    <button class="lodging-grade-score-next-btn">
+                                        <span class="material-icons">keyboard_arrow_right</span>
+                                    </button>
+                                </li>    
+                            </ul>    
+                        </div>
+                    </div>    
+                </div>
+                    
+                <!---호스트 소개-->  
+                <div class="int-host">
+                    <div class="int-host-top">
+                        <h3>호스트:Hyun님</h3>
+                        <p>서울, 한국 · 회원가입 : 2018년 5월</p>
+                        <span>후기 396개</span>
+                        <span>인증됨</span>
+                        <img src="img/host-profile.JPG">
+                    </div>   
+                    <div class="int-host-mid">
+                        <p><b>Hyun님은 슈퍼호스트입니다 ·</b> 슈퍼호스트는 풍부한 경험과 높은 평점을 자랑하며 게스트가 숙소에서 편안히 머무를 수 있도록 최선을 다하는 호스트입니다.</p>
+                    </div>
+                    <div class="int-host-bottom">
+                        <p class="host-txt-eng">
+                        Hello! I am Hyun Chung. I was born in Seoul, went to college in Illinois, stayed in Milan, London, and visited many more countries in Europe, Africa, Asia, Australia, and so on. I like travelling, and as a traveler myself, I would love to greet you to this beautiful town in Korea. I wish you enjoy your stay in Seoul:)
+                        </p>
+                        <div class="int-host-bottom-1">
+                            <p>게스트와의 교류</p>
+                            <span>We try to stay within the property most of the times, but sometimes might not be available. you can call/text us when we are not around, and we'll try to answer as soon as possible.</span>
+                        </div>
+                        <div class="int-host-bottom-2">
+                            <p>언어 : <b>English, 한국어</b></p>
+                            <p>응답률 : <b>100%</b></p>
+                            <p>응답에 소요된 시간 : <b>1시간 이내</b></p>
+                            <button>호스트에게 연락하기</button>
+                        </div>  
+                        <div class="int-host-bottom-3">
+                            <p>언제나 에어비앤비를 통해 대화를 나누세요 · 안전한 결제를 위해 에어비앤비 웹사이트나 앱 외부에서 송금하거나 대화를 나누지 마세요.</p>
+                            <a href="#">더 알아보기</a>
+                        </div>
+                    </div>
+                </div> 
+                    
+                <!--지역정보-->        
+                <div class="location">  
+                    <div class="location-tit">
+                        <h3>지역정보</h3>
+                        <p class="location-tit-txt">Hyun님의 숙소는 종로구 서울 한국에 있습니다.</p>
+                        <span class="location-txt">STAY256 is located only minutes walk away from tourist attractions such as Gyeongbokgung palace, Bukchon Hanok village, Insa-dong and many more. Sinchon, Itaewon and Gangnam are only a few kilometers away, so they are easily reachable by subway, bus or taxi.</span>
+                        <div class="location-txt-detail">
+                            <p>교통편</p>
+                            <span>Anguk subway station(line3) is one kilometer away, and Gwanghwamun station(line5) is 1.5 kilometer away. both can be reached by bus or taxi, but a stroll through Samcheong-dong village to the stations would be a nice experience!</span>
+                        </div>
+                    </div>
+                    <div class="location-btn">
+                        <button>이 지역 자세히 알아보기
+                            <span class="material-icons">keyboard_arrow_down</span>
+                        </button>
+                    </div>
+                    <div class="location-map">
+                        <button>지도 열기</button>
+                        <img src="img/staticmap-1.png" class="location-map-m-1">
+                        <img src="img/staticmap-2.png" class="location-map-m-2">
+                        <div class="loacation-map-pc">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.779113730518!2d126.98679580943319!3d37.5838187279945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c6082c552b%3A0xe163e6b646951ba5!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDtjJTtjJDrj5kg7YyU7YyQ6ri4IDI1LTY!5e0!3m2!1sko!2skr!4v1588921354980!5m2!1sko!2skr" width="594px" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>    
+                        <p>정확한 위치 정보는 예약이 확정된 후 알려드립니다.</p>
+                    </div>
+                </div> 
+                    
+                    
+                <!--숙소 룰-->    
+                <div class="lodging-rule">
+                    
+                    <!--체크인아웃시간-->
+                    <div class="lodging-rule-time">
+                        <h3>유의사항</h3>
+                        <div class="check-in">
+                            <p>체크인</p>
+                            <span>오후 3:00 - 오후 10:00</span>
+                        </div>
+                        <div class="lodging-rule-time-border">
+                            <div class="lodging-rule-time-border-inner"></div>
+                        </div>
+                        <div class="check-out">
+                            <p>체크아웃</p>
+                            <span>오전 11:00</span>
+                        </div>                        
+                    </div>
+                    
+                    <!--숙소이용규칙-->
+                    <div class="using-rule">
+                        <div class="using-rule-btn">
+                            <button>
+                            숙소 이용규칙 
+                            <span class="material-icons">keyboard_arrow_right</span>
+                            </button>    
+                        </div>
+                        <div class="using-rule-cotents">
+                            <p>숙소 이용규칙</p>
+                            <ul>
+                                <li>어린이와 유아에게 적합하지 않음</li>
+                                <li>흡연 금지</li>
+                                <li>반려동물 동반 불가</li>
+                                <li>파티나 이벤트 금지</li>
+                            </ul>
+                            <button>숙소 이용규칙 모두 보기
+                                <span class="material-icons">keyboard_arrow_down</span>
+                            </button>
+                            <div class="using-rule-cotents-etc">
+                                <p>기타 알아두어야 할 사항</p>
+                                <ul>
+                                    <li>건물 내 주차 불가 - There are some public car park nearby.</li>
+                                    <li>일부 공용 공간 있음 - Courtyard, Communal Lounge, Kitchen, Bathrooms(3 shared bathrooms) are shared with other guests.</li>
+                                    <li>숙소에 감시 또는 녹화 장치 설치 - We have security cameras at the main entrance/courtyard for your safety.</li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                    <!--환불정책-->
+                    <div class="lodging-refund">
+                        <button class="lodging-refund-btn">
+                            <div class="lodging-refund-btn-tit">
+                                <p>환불정책</p>
+                                  <span class="material-icons">keyboard_arrow_right</span>
+                            </div>    
+                                <span class="lodging-refund-btn-txt">5월 25일 12:00PM 전에 예약을 취소하면 총 숙박요금의 50% 및 서비스 수수료 전액이 환불됩니다.</span>
+                        </button> 
+                        <div class="lodging-cancel">
+                            <p>예약 취소</p>
+                            <span>5월 25일 12:00PM 전에 예약을 취소하면 총 숙박요금의 50% 및 서비스 수수료 전액이 환불됩니다.</span>
+                            <button class="lodging-cancel-btn">정책 자세히 읽기
+                                <span class="material-icons">keyboard_arrow_down</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!--이 숙소 신고하기-->
+                    <div class="lodging-declare">
+                        <a href="#">이 숙소 신고하기</a>
+                    </div>
+                </div>                                             
+            </div> 
+                
+       <!--가격 및 예약하기 버튼 -->
+            <div class="reservation-button-m">
+                <div class="reservation-button-m-inner">
+                    <div class="reservation-button-txt-m">
+                        <p class="reservation-price-m"><b>₩50,000</b>/박</p>
+                        <p class="reservation-grade-m"><span style="color : #ff385c">★</span> 5.0 (43)</p>
+                    </div>    
+                    <a href="./sub3.html" class="reservation-btn-m">예약하기</a>
+                </div>    
+            </div> 
+            <div class="reservation-button-pc">
+                <div class="reservation-button-txt-pc">
+                    <p class="reservation-price-pc"><b>₩50,000</b>/박</p>
+                    <p class="reservation-grade-pc"><span style="color : #ff385c">★</span> 5.0 (43)</p>
+                </div>    
+                <div class="reservation-option">
+                    <div class="reservation-option-check">
+                        <div class="reservation-option-check-in">
+                            <p>체크인</p>
+                            <p>2020.05.26</p>
+                        </div>
+                        <div class="reservation-option-check-out">
+                            <p>체크아웃</p>
+                            <p>2020.05.28</p>
+                        </div>
+                    </div>    
+                    <div class="reservation-option-num">
+                        <p>인원</p>
+                        <p>게스트 1명</p>
+                    </div>
+                    <a href="./sub3.html" class="reservation-option-btn-pc">예약하기</a>
+                    <p>예약 확정 전에는 요금이 청구되지 않습니다.</p>
+                    <div class="reservation-price-detail">
+                        <p class="reservation-price-detail-contents">₩50,000 x 2박</p>
+                        <p class="reservation-price-detail-contents-price">₩100,000</p>
+                        <p class="reservation-price-detail-contents">청소비</p>
+                        <p class="reservation-price-detail-contents-price">₩10,000</p>
+                        <p class="reservation-price-detail-contents">서비스 수수료</p>
+                        <p class="reservation-price-detail-contents-price">₩15,529</p>
+                        <p class="reservation-price-detail-contents">숙박세와 수수료</p>
+                        <p class="reservation-price-detail-contents-price">₩1,553</p>
+                    </div>
+                    <div class="reservation-total-price">
+                        <p>총 합계</p>
+                        <p style="text-align: right;">₩127,082</p>
+                    </div>
+                </div>
+            </div>                
+        </div>        
+    </div>
+    
+               
+
+            <!--추천숙소 더 보기-->    
+            <div class="recommend">
+                <h3>추천 숙소 더 보기</h3>
+                <div class="recommend-inner">
+                    <div class="recommend-contents recommend-contents01">
+                        <a href="#">
+                            <div class="recommend-img-section">
+                                <img src="img/recomended01.png">
+                                <button>
+                                <span class="material-icons">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="recommend-txt-section">
+                                <p class="recommend-location">대학로</p>
+                                <p class="recommmend-type">호텔 객실 · 침대 1개</p>
+                                <p class="recommend-grade">
+                                    <img src="img/star.svg">4.83 (6)
+                                </p>
+                                <p class="recommend-name">SlowStayDA-1</p>
+                                <p class-="recommend-price"><b>₩100,000</b>/1박</p>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="recommend-contents recommend-contents02">
+                        <a href="#">
+                            <div class="recommend-img-section">
+                                <img src="img/recomended02.png">
+                                <button>
+                                <span class="material-icons">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="recommend-txt-section">
+                                <p class="recommend-location">동대문</p>
+                                <p class="recommmend-type">집 전체 · 침대 3개</p>
+                                <p class="recommend-grade">
+                                    <img src="img/star.svg">4.89 (65)
+                                </p>
+                                <p class="recommend-name">Crisp and Clean 2BR House in Historic Dongdaemun</p>
+                                <p class-="recommend-price"><b>₩111,664</b>/1박</p>
+                            </div>  
+                        </a>    
+                    </div>
+                    <div class="recommend-contents recommend-contents03">
+                        <a href="#">
+                            <div class="recommend-img-section">
+                                <img src="img/recomended03.png">
+                                <button>
+                                <span class="material-icons">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="recommend-txt-section">
+                                <p class="recommend-location">인사동</p>
+                                <p class="recommmend-type">호텔 객실 · 침대 2개</p>
+                                <p class="recommend-grade">
+                                    <img src="img/star.svg">4.65 (10)
+                                </p>
+                                <p class="recommend-name">Deluxe Twin Room 301</p>
+                                <p class-="recommend-price"><b>₩59,000</b>/1박</p>
+                            </div>  
+                        </a>    
+                    </div>                    
+                </div>
+            </div>   
+            
+            <!--숙소 주변의 즐길 거리-->    
+            <div class="enjoy">
+                <h3>숙소 주변의 즐길 거리</h3>
+                <div class="enjoy-inner">
+                    <div class="enjoy-contents enjoy-contents01">
+                        <a href="#">
+                            <div class="enjoy-img-section">
+                                <img src="img/enjoy01.png">
+                                <button>
+                                <span class="material-icons">favorite</span>
+                                </button>
+                            </div>
+                            <div class="enjoy-txt-section">
+                                <p class="enjoy-type">도보 사진 여행</p>
+                                <p class="enjoy-tit">서울에서의 로맨틱한 사진 모델 투어</p>
+                                <p class="enjoy-price">1인당 ₩100,000부터 · 음료 포함</p>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="enjoy-contents enjoy-contents02">
+                        <a href="#">
+                            <div class="enjoy-img-section">
+                                <img src="img/enjoy02.png">
+                                <button>
+                                <span class="material-icons">favorite</span>
+                                </button>
+                            </div>
+                            <div class="enjoy-txt-section">
+                                <p class="enjoy-type">문화 도보 여행</p>
+                                <p class="enjoy-tit">한국 전통의상 한복 입고 고궁 산책하기</p>
+                                <p class="enjoy-price">1인당 ₩23,000부터 · 장비 포함</p>
+                            </div>
+                        </a>    
+                    </div>  
+                    <div class="enjoy-contents enjoy-contents03">
+                        <a href="#">
+                            <div class="enjoy-img-section">
+                                <img src="img/enjoy03.png">
+                                <button>
+                                <span class="material-icons">favorite</span>
+                                </button>
+                            </div>
+                            <div class="enjoy-txt-section">
+                                <p class="enjoy-type">공예 클래스</p>
+                                <p class="enjoy-tit">Making pottery in Yeonnam - Handbuilding</p>
+                                <p class="enjoy-price">1인당 ₩10,000부터 · 음료,장비 포함</p>
+                            </div>
+                        </a>    
+                    </div> 
+                    <div class="enjoy-contents enjoy-contents04">
+                        <a href="#">
+                            <div class="enjoy-img-section">
+                                <img src="img/enjoy04.png">
+                                <button>
+                                <span class="material-icons">favorite</span>
+                                </button>
+                            </div>
+                            <div class="enjoy-txt-section">
+                                <p class="enjoy-type">도보 음식 탐방</p>
+                                <p class="enjoy-tit">광장시장 먹거리 투어</p>
+                                <p class="enjoy-price">1인당 ₩50,000부터 · 음식, 음료 포함</p>
+                            </div>
+                        </a>    
+                    </div>                     
+                </div> 
+            </div>
+              
+            <!--종로구 지역 및 인근의 다른 옵션 살펴보기-->    
+            <div class="other-option">
+                <h3>종로구 지역 및 인근의 다른 옵션 살펴보기</h3>
+                <div class="other-option-inner">
+                    <div class="other-option-type">
+                        <p>종로구 숙소 더보기 : </p>
+                        <a href="#">아파트</a>
+                        <span> · </span> 
+                        <a href="#">주택</a>
+                        <span> · </span> 
+                        <a href="#">로프트</a>
+                        <span> · </span> 
+                        <a href="#">저택 또는 별장</a>
+                        <span> · </span> 
+                        <a href="#">콘도</a>
+                    </div>  
+                    <div class="other-option-location">
+                        <a href="#">서울</a>
+                        <a href="#">마포구</a>
+                        <a href="#">해운대구</a>
+                        <a href="#">중구</a>
+                        <a href="#">용산구</a>
+                        <a href="#">강남구</a>
+                        <a href="#">부산</a>
+                        <a href="#">Jongno 5(o).6(yuk)ga-dong, Seoul</a>
+                        <a href="#">Seongsan-eup</a>
+                        <a href="#">Jungang-dong</a>
+                        <a href="#">Hallim-eub</a>
+                        <a href="#">Nanpean</a>
+                    </div>
+                </div>
+            </div>      
+  
+            
+    <!--푸터-->
+    <footer>
+        <div class="footer">
+            <div class=footer-top>
+                <!--소개-->
+                <div class="footer-contents footer01">
+                    <p>소개</p>
+                    <ul>
+                        <li><a href="#">다양성 및 소속감</a></li>
+                        <li><a href="#">접근성</a></li>
+                        <li><a href="#">신뢰와 안정</a></li>
+                        <li><a href="#">Airbnb Citizen</a></li>
+                        <li><a href="#">뉴스룸</a></li>
+                    </ul>    
+                </div>
+
+                <!--커뮤니티-->
+                <div class="footer-contents footer02">
+                    <p>커뮤니티</p>
+                    <ul>
+                        <li><a href="#">에어비앤비 매거진</a></li>
+                        <li><a href="#">에어비앤비 비즈니스 프로그램</a></li>
+                        <li><a href="#">친구 초대하기</a></li>
+                        <li><a href="#">채용정보</a></li>
+                    </ul>  
+                </div>
+
+                <!--호스팅하기-->
+                <div class="footer-contents footer03">
+                    <p>호스팅하기</p>
+                    <ul>
+                        <li><a href="#">숙소 호스팅</a></li>
+                        <li><a href="#">체험 호스팅</a></li>
+                        <li><a href="#">책임감 있는 호스팅</a></li>
+                        <li><a href="#">Open Homes</a></li>
+                        <li><a href="#">올림픽</a></li>
+                        <li><a href="#">자료센터</a></li>
+                    </ul>  
+                </div>
+
+                <!--에어비앤비 지원-->
+                <div class="footer-contents footer04">
+                    <p>에어비앤비 지원</p>
+                    <ul>
+                        <li><a href="#">도움센터</a></li>
+                        <li><a href="#">에어비앤비 이웃 민원 지원</a></li>
+                    </ul>  
+                </div>
+            </div> 
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <div class="footer-lang">
+                        <a href="#">
+                            <img src="img/language.svg">
+                            <span>한국어(KR)</span>
+                        </a>
+                        <a href="#">
+                            ₩ <span>KRW</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-sns">
+                        <a href="https://www.facebook.com/AirbnbKorea" target="_blank">
+                            <img src="./img/facebook.svg">
+                        </a>
+                        <a href="https://twitter.com/airbnb" target="_blank">
+                            <img src="./img/twitter.svg">
+                        </a>
+                        <a href="https://www.instagram.com/airbnb/" target="_blank">
+                            <img src="./img/instagram.svg">
+                        </a>
+                        <a href="https://blog.naver.com/airbnbkr" target="_blank">
+                            <img src="./img/blog.png">
+                        </a>
+                        <a href="https://post.naver.com/airbnb_kr" target="_blank">
+                            <img src="./img/post.png">
+                        </a>
+                    </div>
+                </div>    
+                <div class="footer-copyright">
+                    <p>© 2020 Airbnb, Inc. All rights reserved</p>
+                    <a href="#">개인정보 처리방침</a>
+                    <span>·</span>
+                    <a href="#">이용약관</a>
+                    <span>·</span>
+                    <a href="#">사이트맵</a>
+                    <span>·</span>
+                    <a href="#">한국의 변경된 환불정책</a>
+                </div>
+            </div>
+        </div>    
+    </footer>   
+    </div>
+    
+
+    </body>
+</html>

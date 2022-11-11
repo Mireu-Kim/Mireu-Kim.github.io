@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>숙소, 체험, 장소를 모두 한 곳에서 - 에어비앤비</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--css-->
+        <link rel="stylesheet" href="./style.css">
+
+        <!--메테리얼아이콘-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        
+        <!--타이틀 아이콘-->
+        <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+        
+        <script type="text/javascript" src="js/jquery.js"></script>        
+    </head>
+    
+    <body>
+        <!--최상단 자세히 알아보기-->
+        <div class="airbnb-top">
+            <div class="airbnb-top-txt">
+                <p>코로나19에 대한 에어비앤비의 대책 및 환불 정책에 대한 최신 정보를 확인하세요.
+                    <a href="#">자세히 알아보기</a>
+                </p>
+            </div>    
+        </div>
+        
+        
+        <!--로고 및 메뉴-->
+        <div class="header">
+            <div class="header-inner">
+            <!--로고-->
+                <div class="logo">
+                    <a href="index.html">
+                       <img src="img/logo.png" class="logo-max">
+                       <img src="img/logo-min.png" class="logo-min">
+                    </a>    
+                </div>
+
+
+                <!--메뉴-->
+                <div class="nav">
+                    <div class="nav-outer">
+                        <ul class="nav-menu">
+                            <li class="nav-menu-txt">
+                                <button class="nav-btn">
+                                    <div class="nav-btn-img">
+                                      <img src="./img/language.svg">
+                                    </div>    
+                                    <span class="material-icons">
+                                       keyboard_arrow_down
+                                    </span>
+                                </button>
+                            </li>    
+                            <li class="nav-menu-txt">
+                                <a href="#">숙소 호스트 되기</a>
+                            </li>
+                            <li class="nav-menu-txt">
+                                <a href="#">체험 호스팅하기</a>
+                            </li>
+                            <li class="nav-menu-txt">
+                                <a href="#">도움말</a>
+                            </li>
+                            <li class="nav-menu-txt">
+                                <a href="#">로그인</a>
+                            </li>
+                            <li class="nav-menu-join">
+                                <a href="#">회원가입</a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+            
+            
+        <!--모바일일 때 하단 고정 메뉴-->
+        <div class="m-fixed-menu">
+            <div class="m-fixed-menu-inner">
+
+                <!--둘러보기-->
+                <div class="m-fixed-menu-cotents">
+                    <div class="m-fixed-menu-look">
+                        <a href="#">
+                            <img src="img/look.svg" class="m-fixed-menu-primary">
+                            <img src="img/look-hover.svg" class="m-fixed-menu-hover">
+                            <p class="m-fixed-menu-txt">둘러보기</p>
+                        </a>    
+                    </div>
+                </div>
+
+                <!--저장목록-->
+                <div class="m-fixed-menu-cotents">
+                    <div class="m-fixed-menu-save">
+                        <a href="#">
+                            <img src="img/save.svg" class="m-fixed-menu-primary">
+                            <img src="img/save-hover.svg" class="m-fixed-menu-hover">
+                            <p class="m-fixed-menu-txt">저장 목록</p>
+                        </a>    
+                    </div>
+                </div>
+
+                <!--로그인-->
+                <div class="m-fixed-menu-cotents">
+                    <div class="m-fixed-menu-login">
+                        <a href="#">
+                            <img src="img/login.svg" class="m-fixed-menu-primary">
+                            <img src="img/login-hover.svg" class="m-fixed-menu-hover">
+                            <p class="m-fixed-menu-txt">로그인</p>
+                        </a>    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+        <!--탭-->
+        <div class="tab">
+            <div class="tab-select">
+                <ul class="tab-contents">
+                    <li><a href="#">숙소</a></li>
+                    <li><a href="#">체험</a></li>
+                    <li class="tab-online">
+                        <a href="#">
+                            온라인 체험
+                            <div class="online-tag">NEW</div>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+            <div class="tab-box">
+                <div class="tab-location-outer">
+                    <div class="tab-location-inner">
+                    <label class="tab-location">
+                        <div class="tab-location-search">
+                            <span class="material-icons search-icon">search</span>
+                        </div>
+                        <div class="tab-location-tit">위치</div>
+                        <input type="text" placeholder="어디로 여행가세요?">
+                    </label>
+                    </div>    
+                </div> 
+                <div class="tab-date-outer">
+                    <div class="tab-date-inner">
+                        <button class="tab-date">
+                            <div class="tab-date-tit">체크인/체크아웃</div>
+                            <div class="tab-date-txt">날짜 추가</div>
+                        </button>
+                    </div>    
+                </div>   
+                <div class="tab-person-num-outer">
+                    <div class="tab-person-num-inner">
+                        <button class="tab-person-num">
+                            <div class="tab-person-num-tit">인원</div>
+                            <div class="tab-person-num-txt">게스트 추가</div>
+                        </button>  
+                   </div>   
+                </div>
+                <div class="search">
+                    <button typr="button" onclick="location.href='./sub1.html'">
+                        <span class="material-icons search-icon">search</span>
+                        <span class="search-txt">검색</span>
+                    </button>
+                </div>
+            </div>    
+        </div>  
+            
+        <!--메인사진-->
+        <div class="main">  
+            <a href="#">
+                <div class="main-inner">
+                   <img src="img/main-m.png">
+                    <div class="main-tit">
+                        <h1>가까운 곳에서 즐기는<br>색다른 여행</h1> 
+                        <p>가까운 곳에 숨겨진 아름다움을 발견하는 색다른<br>휴가를 즐겨보세요.</p>   
+                        <span><b>가까운 여행지 둘러보기 ></b></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--카드디자인-->
+        <div class="card">
+            <div class="card-cotents-wrap">
+                <div class="card-cotents">
+                    <div class="card-list-outer">
+                        <div class="card-list card01">
+                            <a href="./sub1.html">
+                                <div class="card-new-tag">NEW</div>
+                                <img src="img/card01.jpg">
+                                <div class="card-txt card-01-txt">
+                                    <p>온라인체험</p>
+                                    <span>세계 각지의 호스트가 진행하고 모두 함께 즐기는 독특한 액티비티</span>
+                                </div>
+                            </a>    
+                        </div>
+                    </div>                  
+                    <div class="card-list-outer">
+                        <div class="card-list card02">
+                            <a href="./sub1.html">
+                                <img src="img/card02.jpg">
+                                <div class="card-txt card-02-txt">
+                                    <p>가까운 여행지</p>
+                                    <span>자동차로 금방 다녀올 수 있는 근교 여행지에서 휴식을 즐기세요.</span>
+                                </div>
+                            </a>    
+                        </div>
+                    </div> 
+                    <div class="card-list-outer">
+                        <div class="card-list card03">
+                            <a href="./sub1.html">
+                                <div class="card-new-tag">NEW</div>
+                                <img src="img/card03.jpg">
+                                <div class="card-txt card-02-txt">
+                                    <p>집 전체</p>
+                                    <span>편안한 공간에서 친구 및 가족과 오붓한 시간을 보내세요.</span>
+                                </div>
+                            </a>    
+                        </div>
+                    </div>                 
+
+                </div>
+            </div>
+        </div>     
+            
+
+        <!--온라인체험-->
+        <div class="online-ex-outer"> 
+            <div class="online-ex">
+                <div class="online-ex-intro">
+                  <div class="online-ex-tit">
+                        <h2>온라인 체험 소개</h2>
+                        <p>세계 각지의 사람들과 새로운 것에 도전해보세요.호스트가 진행하는 실시간 영상 세션을 통해 이제 집에서도 안전하게 체험을 즐기실 수 있습니다.</p>
+                    </div> 
+                    <div class="online-ex-btn">
+                        <button type="button" onclick="location='#'">모두 둘러보기</button>  
+                    </div>    
+                </div>
+                
+                <div class="online-ex-contents-wrap">
+                    <div class="online-ex-contents">
+                        <div class="online-ex-list online-ex-list01">
+                            <div class="online-ex-list-inner">
+                                <a href="./sub1.html">
+                                    <div class="online-ex-list-img">
+                                        <img src="img/online01-m.JPG" class="online-list-img-m">
+                                        <img src="img/online01-t.JPG" class="online-list-img-t">
+                                        <img src="img/online01.JPG" class="online-list-img-pc">
+                                    </div>
+                                    <div class="online-ex-list-txt">
+                                        <p>리스본에 사는 페드로와 함께 비밀의 샹그리아를 만들어보세요.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="online-ex-list-outer">
+                            <div class="online-ex-list online-ex-list02">
+                                <div class="online-ex-list-inner">
+                                    <a href="./sub1.html">
+                                        <div class="online-ex-list-img">
+                                            <img src="img/online02-m.jpg" class="online-list-img-m">
+                                            <img src="img/online02-t.jpg" class="online-list-img-t">
+                                            <img src="img/online02.jpg" class="online-list-img-pc">
+                                        </div>
+                                        <div class="online-ex-list-txt">
+                                            <p>스트레칭을 하고, 호흡을 가다듬고, 긴장을 풀어보세요. 친구와 함께하는 요가 클래스.</p>
+                                        </div>   
+                                    </a>    
+                                </div>
+                            </div>
+                            <div class="online-ex-list online-ex-list03">
+                                <div class="online-ex-list-inner">
+                                    <a href="./sub1.html">
+                                        <div class="online-ex-list-img">
+                                            <img src="img/online03-m.jpg" class="online-list-img-m">
+                                            <img src="img/online03-t.jpg" class="online-list-img-t">
+                                            <img src="img/online03.jpg" class="online-list-img-pc">
+                                        </div>
+                                        <div class="online-ex-list-txt">
+                                            <p>암스테르담에 사는 제니스와 함께 음악을 들으며 명상하기</p>
+                                        </div>
+                                    </a>    
+                                </div>
+                            </div>
+                            <div class="online-ex-list online-ex-list04">
+                                <div class="online-ex-list-inner">
+                                    <a href="#">
+                                        <div class="online-ex-list-img">
+                                            <img src="img/online04-m.jpg" class="online-list-img-m">
+                                            <img src="img/online04-t.jpg" class="online-list-img-t">
+                                            <img src="img/online04.jpg" class="online-list-img-pc">
+                                        </div>
+                                        <div class="online-ex-list-txt">
+                                            <p>존과 함께 그림 그리며 아프리카 펭귄에게 도움의 손길 보내기</p>
+                                        </div>
+                                    </a>    
+                                </div>
+                            </div>                    
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+            
+        <!--동참하기-->
+        <div class="help">
+            <div class="help-inner">
+                <div class="help-tit">
+                    <h2>최전선에서 싸우는 구호 인력에게 숙소를 제공하는 에어비앤비의 노력에 동참해주세요.</h2>
+                    <div class="help-btn">
+                        <button type="button" onclick="location='#'">동참하기</button>
+                    </div>
+                </div>
+                <div class="help-txt">
+                    <p>코로나19와 맞서 싸우는 보건의료 인력, 긴급 구호 요원, 응급구조 요원 등 10만 명에게 임시 숙소를 제공하는 '구호 인력을 위한 숙소'프로그램에 에어비앤비 호스트 여러분의 참여를 부탁드립니다. 이는 감염 노출 위험이 있는 구호 인력에게 병원과 가까우면서도 가족과 떨어져 안전하게 머물 수 있는 숙소를 제공하기 위한 것입니다.</p>    
+                </div>
+            </div>    
+        </div>  
+
+
+        <!--최신정보 확인하기-->
+        <div class="new-info">
+            <div class="new-info-tit">
+                <h2>최신 정보 확인하기</h2>
+            </div>
+
+            <!--게스트를 위한 정보-->
+            <div class="new-info-outer">
+                <div class="new-info-inner">
+                    <div class="new-info-contents new-info01">
+                        <div class="new-info-contents-tit">
+                            <h3>게스트를 위한 정보</h3>
+                        </div>
+                        <div class="new-info-contents-txt new-info01-txt">
+                            <a href="#">
+                                <p>여행 관련 업데이트</p>
+                                <span>알아두어야 할 사항</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info01-txt">
+                            <a href="#">
+                                <p>예약 취소 옵션</p>
+                                <span>취소 가능 대상 및 환불 범위 알아보기</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info01-txt">
+                            <a href="#">
+                                <p>도움말 센터</p>
+                                <span>필요한 도움받기</span>
+                            </a>    
+                        </div>
+                    </div>
+
+                    <!--호스트를 위한 정보-->
+                    <div class="new-info-contents new-info02">
+                        <div class="new-info-contents-tit new-info02-tit">
+                            <h3>호스트를 위한 정보</h3>
+                        </div>
+                        <div class="new-info-contents-txt new-info02-txt">
+                            <a href="#">
+                                <p>브라이언 체스키 CEO의 메시지</p>
+                                <span>에어비앤비 CEO의 영상 메시지 보기</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info02-txt">
+                            <a href="#">
+                                <p>호스팅에 도움이 되는 자료</p>
+                                <span>코로나19로 인한 영향</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info02-txt">
+                            <a href="#">
+                                <p>구호 인력을 위한 숙소 제공하기</p>
+                                <span>구호 인력 지원 방법 알아보기</span>
+                            </a>    
+                        </div>
+                    </div>
+
+                    <!--코로나19 구호인력을 위한 정보-->
+                    <div class="new-info-contents new-info03">
+                        <div class="new-info-contents-tit new-info03-tit">
+                            <h3>코로나19 구호 인력을 위한 정보</h3>
+                        </div>
+                        <div class="new-info-contents-txt new-info03-txt">
+                            <a href="#">
+                                <p>구호 인력을 위한 숙소</p>
+                                <span>프로그램에 대해 알아보기</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info03-txt">
+                            <a href="#">
+                                <p>숙소 신청</p>
+                                <span>숙소 옵션 확인하기</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info03-txt">
+                            <a href="#">
+                                <p>기부하기</p>
+                                <span>비영리 단체 지원하기</span>
+                            </a>    
+                        </div>
+                    </div>
+
+                    <!--기타-->
+                    <div class="new-info-contents new-info04">
+                        <div class="new-info-contents-tit new-info04-tit">
+                            <h3>기타</h3>
+                        </div>
+                        <div class="new-info-contents-txt new-info04-txt">
+                            <a href="#">
+                                <p>에어비앤비 뉴스룸</p>
+                                <span>최근 발표한 사항</span>
+                            </a>    
+                        </div>
+                        <div class="new-info-contents-txt new-info04-txt">
+                            <a href="#">
+                                <p>세계보건기구</p>
+                                <span>관련 정보 업데이트</span>
+                            </a>       
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div> 
+        
+            
+   <!--푸터-->
+    <footer>
+        <div class="footer">
+            <div class=footer-top>
+                <!--소개-->
+                <div class="footer-contents footer01">
+                    <p>소개</p>
+                    <ul>
+                        <li><a href="#">다양성 및 소속감</a></li>
+                        <li><a href="#">접근성</a></li>
+                        <li><a href="#">신뢰와 안정</a></li>
+                        <li><a href="#">Airbnb Citizen</a></li>
+                        <li><a href="#">뉴스룸</a></li>
+                    </ul>    
+                </div>
+
+                <!--커뮤니티-->
+                <div class="footer-contents footer02">
+                    <p>커뮤니티</p>
+                    <ul>
+                        <li><a href="#">에어비앤비 매거진</a></li>
+                        <li><a href="#">에어비앤비 비즈니스 프로그램</a></li>
+                        <li><a href="#">친구 초대하기</a></li>
+                        <li><a href="#">채용정보</a></li>
+                    </ul>  
+                </div>
+
+                <!--호스팅하기-->
+                <div class="footer-contents footer03">
+                    <p>호스팅하기</p>
+                    <ul>
+                        <li><a href="#">숙소 호스팅</a></li>
+                        <li><a href="#">체험 호스팅</a></li>
+                        <li><a href="#">책임감 있는 호스팅</a></li>
+                        <li><a href="#">Open Homes</a></li>
+                        <li><a href="#">올림픽</a></li>
+                        <li><a href="#">자료센터</a></li>
+                    </ul>  
+                </div>
+
+                <!--에어비앤비 지원-->
+                <div class="footer-contents footer04">
+                    <p>에어비앤비 지원</p>
+                    <ul>
+                        <li><a href="#">도움센터</a></li>
+                        <li><a href="#">에어비앤비 이웃 민원 지원</a></li>
+                    </ul>  
+                </div>
+            </div> 
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <div class="footer-lang">
+                        <a href="#">
+                            <img src="img/language.svg">
+                            <span>한국어(KR)</span>
+                        </a>
+                        <a href="#">
+                            ₩ <span>KRW</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-sns">
+                        <a href="https://www.facebook.com/AirbnbKorea" target="_blank">
+                            <img src="./img/facebook.svg">
+                        </a>
+                        <a href="https://twitter.com/airbnb" target="_blank">
+                            <img src="./img/twitter.svg">
+                        </a>
+                        <a href="https://www.instagram.com/airbnb/" target="_blank">
+                            <img src="./img/instagram.svg">
+                        </a>
+                        <a href="https://blog.naver.com/airbnbkr" target="_blank">
+                            <img src="./img/blog.png">
+                        </a>
+                        <a href="https://post.naver.com/airbnb_kr" target="_blank">
+                            <img src="./img/post.png">
+                        </a>
+                    </div>
+                </div>    
+                <div class="footer-copyright">
+                    <p>© 2020 Airbnb, Inc. All rights reserved</p>
+                    <a href="#">개인정보 처리방침</a>
+                    <span>·</span>
+                    <a href="#">이용약관</a>
+                    <span>·</span>
+                    <a href="#">사이트맵</a>
+                    <span>·</span>
+                    <a href="#">한국의 변경된 환불정책</a>
+                </div>
+            </div>
+        </div>    
+    </footer>   
+    </body>
+</html>

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>종로구 · 숙소 · Airbnb</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+
+        <!--메테리얼아이콘-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        
+        <!--타이틀 아이콘-->
+        <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+        
+        <!--css-->
+        <style>
+            .favorite-btn >span.on {
+                color : #ff385c;
+                opacity: 1;
+            }
+        </style>
+        
+        <!--js-->
+        <script src="js/jquery-1.12.3.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(".favorite-btn").click(function(){
+                    $(this).children().toggleClass("on")
+                })
+            })
+        </script>
+    </head>
+    
+    <body> 
+        
+    <!--로고 및 메뉴-->
+    <div class="sub1-header">
+        <div class="sub1-header-inner">
+            
+            <!--뒤로가기 버튼-->
+            <div class="before-btn">
+                <button type="button" onclick="location.href='./index.html'">
+                    <span class="material-icons">
+                        navigate_before
+                    </span>
+                </button>
+            </div>    
+            
+            <!--로고-->
+            <div class="sub1-logo">
+                <a href="index.html">
+                   <img src="img/logo-min.png" class="sub1-logo-min">
+                   <img src="img/logo.png" class="sub1-logo-max">
+                </a>    
+            </div>
+
+            <!--박스-->
+            <div class="sub1-header-container">
+                <div class="sub1-search-box">
+                   <div class="sub1-search-box-m">
+                       <div class="sub1-search-box-m-inner">
+                            <button>
+                                <div class="search-result">
+                                    <span class="material-icons search-icon">search</span>    
+                                    <span>종로구 · 5월 26일 - 5월 28일 · 게스트 1명</span>
+                                </div>    
+                            </button>
+                       </div>   
+                    </div>
+
+                    <div class="sub1-search-box-t">
+                       <div class="sub1-search-box-t-inner">
+                            <div class="sub1-search-location">
+                                <button>
+                                    종로구, 종로구, 한국
+                                </button>    
+                            </div>
+                            <div class="sub1-search-date">
+                                 <button>
+                                    5월 26일 - 28일
+                                </button>   
+                            </div>
+                            <div class="sub1-search-person">
+                                <button>
+                                    게스트 1명
+                                </button>   
+                            </div>
+                            <div class="sub1-search-icon">
+                                <button>
+                                 <span class="material-icons">search</span>
+                                </button>    
+                            </div>                          
+                       </div>   
+                    </div> 
+                 </div>
+
+                <!--메뉴-->
+                <div class="sub1-nav">
+                    <div class="sub1-nav-inner">
+                        <ul class="sub1-nav-menu">
+                            <li class="sub1-nav-menu-txt">
+                                <button class="sub1-nav-btn">
+                                    <div class="sub1-nav-btn-img">
+                                      <img src="./img/language.svg">
+                                    </div>    
+                                    <span class="material-icons">
+                                       keyboard_arrow_down
+                                    </span>
+                                </button>
+                            </li>    
+                            <li class="sub1-nav-menu-txt">
+                                <a href="#">도움말</a>
+                            </li>
+                            <li class="sub1-nav-menu-join">
+                                <a href="#">회원가입</a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+    </div>    
+
+
+        <!--모바일일 때 하단 고정 메뉴-->
+        <div class="m-fixed-menu">
+            <div class="m-fixed-menu-inner">
+
+                <!--둘러보기-->
+                <div class="m-fixed-menu-cotents">
+                    <div class="m-fixed-menu-look">
+                        <a href="#">
+                            <img src="img/look.svg" class="m-fixed-menu-primary">
+                            <img src="img/look-hover.svg" class="m-fixed-menu-hover">
+                            <p class="m-fixed-menu-txt">둘러보기</p>
+                        </a>    
+                    </div>
+                </div>
+
+                <!--저장목록-->
+                <div class="m-fixed-menu-cotents">
+                    <div class="m-fixed-menu-save">
+                        <a href="#">
+                            <img src="img/save.svg" class="m-fixed-menu-primary">
+                            <img src="img/save-hover.svg" class="m-fixed-menu-hover">
+                            <p class="m-fixed-menu-txt">저장 목록</p>
+                        </a>    
+                    </div>
+                </div>
+
+                <!--로그인-->
+                <div class="m-fixed-menu-cotents">
+                    <div class="m-fixed-menu-login">
+                        <a href="#">
+                            <img src="img/login.svg" class="m-fixed-menu-primary">
+                            <img src="img/login-hover.svg" class="m-fixed-menu-hover">
+                            <p class="m-fixed-menu-txt">로그인</p>
+                        </a>    
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+        
+        <!--숙소 리스트-->
+        <div class="search-list">
+            <div class="search-list-tit">
+                <div class="search-list-tit-top">
+                    <p>300개 이상의 숙소 · 5월 26일 - 5월 28일 · 게스트 1명</p>
+                    <h1>종로구의 숙소</h1>
+                </div>    
+                <div class="search-list-btn-m">
+                    <button>출장</button>
+                    <button>즉시 예약 </button>
+                    <button>필터</button>
+                </div>
+                <div class="search-list-btn-pc">
+                    <button>유연한 환불 정책</button>
+                    <button>숙소 유형</button>
+                    <button>요금</button>
+                    <button>침실과 침대</button>
+                    <button>필터 추가하기</button>
+                </div>
+                <div class="reservation-caution">
+                    <div class="reservation-caution-img">
+                        <img src="img/icon-alarm.gif">
+                    </div>
+                    <div class="reservation-caution-txt">
+                       <p><b>예약에 앞서 여행 제한 사항을 확인하세요.</b> 에어비앤비 커뮤니티의 건강과 안전이 최우선입니다. 정부 지침을 준수하고 꼭 필요한 경우에만 여행하실 것을 부탁드립니다. <a href="#">자세히 알아보기</a></p>
+                    </div>    
+                </div>
+            </div>
+            
+            
+            <div class="lodging-list-outer">
+                
+                <!--리스트01-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum01.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">호텔 객실</span>
+                                    <p class="lodging-tit">STAY256 Hanok Guesthouse_RM1</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.96<span class="lodging-list-grade-txt-pc"> (46)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 1명 · 침실 1개 · 침대 1개 · 욕실 3개</p>
+                                    <p>주방 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-discount-price"><b>₩64,541</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩127,082</p>
+                                        </div>  
+                                    </div>    
+                                </div>      
+                                <div class="lodging-list-tag">
+                                    <!--예약이 금방 마감되는 숙소-->
+                                    <div class="lodging-list-tag-contents">
+                                        <img src="img/diamond.svg">
+                                        <span>예약이 금방 마감되는 숙소</span>              
+                                    </div>       
+                                </div>                                
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                <!--리스트02-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum02.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">아파트 전체</span>
+                                    <p class="lodging-tit">[을지로 Eulgiro] Gisrak House for 4 People</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.82<span class="lodging-list-grade-txt-pc"> (78)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 5명 · 원룸 · 침대 2개 · 욕실 1개</p>
+                                    <p>주방 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-discount-price"><b>₩134,437</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩268,873</p>
+                                        </div>  
+                                    </div>    
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                <!--리스트03-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum03.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">콘도(아파트) 전체</span>
+                                    <p class="lodging-tit">Ctral loc. Experience ONAUMI #1 !!</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.88<span class="lodging-list-grade-txt-pc"> (197)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 4명 · 침실 2개 · 침대 4개 · 욕실 1개</p>
+                                    <p>주방 · 무료 주차공간 · 무선인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-discount-price"><b>₩78,503</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩157,005</p>
+                                        </div>  
+                                    </div>    
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                <!--리스트04-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum04.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">아파트 전체</span>
+                                    <p class="lodging-tit">[Helloworld] Duplex Room Newly open</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.42<span class="lodging-list-grade-txt-pc"> (76)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 4명 · 침실 1개 · 침대 1개 · 욕실 1개</p>
+                                    <p>주방 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-discount-price"><b>₩70,335</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩140,669</p>
+                                        </div>  
+                                    </div>    
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div> 
+                
+                <!--리스트05-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum05.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="lodging-type">아파트 전체</span>
+                                    <p class="lodging-tit">[PRIVATE STUDIO] Newtro&Cozy</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.96<span class="lodging-list-grade-txt-pc"> (46)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 2명 · 침실 1개 · 침대 2개 · 욕실 1개</p>
+                                    <p>주방 · 무선 인터넷 · 난방</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-origin-price"><b>₩50,000</b></p>
+                                            <p class="lodging-list-discount-price"><b>₩47,945</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩95,890</p>
+                                        </div>  
+                                    </div>    
+
+                                    <!--숙소 태그-->
+                                    <div class="lodging-list-tag">
+                                        <!--더 낮아진 요금-->
+                                        <div class="lodging-list-tag-contents">
+                                            <img src="img/tag.svg">
+                                            <span>더 낮아진 요금</span>
+                                        </div>          
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+            
+                <!--리스트06-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum06.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">아파트 전체</span>
+                                    <p class="lodging-tit">[ Myeongdong] #003Jongno Nana'house</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.75<span class="lodging-list-grade-txt-pc"> (166)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 3명 · 침실 1개 · 침대 2개 · 욕실 1개</p>
+                                    <p>주방 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-origin-price"><b>₩92,541</b></p>
+                                            <p class="lodging-list-discount-price"><b>₩60,653</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩121,206</p>
+                                        </div>  
+                                    </div>    
+
+                                    <!--숙소 태그-->
+                                    <div class="lodging-list-tag"> 
+
+                                        <!--예약이 금방 마감되는 숙소-->
+                                        <div class="lodging-list-tag-contents">
+                                            <img src="img/diamond.svg">
+                                            <span>예약이 금방 마감되는 숙소</span>              
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                
+                <!--리스트07-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum07.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="lodging-type">아파트 전체</span>
+                                    <p class="lodging-tit">KOO House Seoul/Hongdae/Yeouido</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.67<span class="lodging-list-grade-txt-pc"> (252)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 3명 · 침실 1개 · 침대 1개 · 욕실 1개</p>
+                                    <p>주방 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-origin-price"><b>₩111,793</b></p>
+                                            <p class="lodging-list-discount-price"><b>₩101,666</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩203,332</p>
+                                        </div>  
+                                    </div>    
+
+                                    <!--숙소 태그-->
+                                    <div class="lodging-list-tag">
+                                        <!--더 낮아진 요금-->
+                                        <div class="lodging-list-tag-contents">
+                                            <img src="img/tag.svg">
+                                            <span>더 낮아진 요금</span>
+                                        </div>          
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                
+                <!--리스트08-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum08.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">집 전체</span>
+                                    <p class="lodging-tit">Romantic House - 4min Hongik stn.</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.77<span class="lodging-list-grade-txt-pc"> (70)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 2명 · 침실 1개 · 침대 2개 · 욕실 1개</p>
+                                    <p>주방 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-discount-price"><b>₩83,759</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩167,518</p>
+                                        </div>  
+                                    </div>    
+
+                                    <!--숙소 태그-->
+                                    <div class="lodging-list-tag">  
+
+                                        <!--예약이 금방 마감되는 숙소-->
+                                        <div class="lodging-list-tag-contents">
+                                            <img src="img/diamond.svg">
+                                            <span>예약이 금방 마감되는 숙소</span>              
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                
+                <!--리스트09-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum09.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="lodging-type">콘도(아파트) 전체</span>
+                                    <p class="lodging-tit">BaseOrder : 오픈 스튜디오 & 스테이</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.60<span class="lodging-list-grade-txt-pc"> (52)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 2명 · 침실 1개 · 침대 1개 · 욕실 1개</p>
+                                    <p>무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-origin-price"><b>₩92,224</b></p>
+                                            <p class="lodging-list-discount-price"><b>₩77,983</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩155,965</p>
+                                        </div>  
+                                    </div>    
+
+                                    <!--숙소 태그-->
+                                    <div class="lodging-list-tag">
+                                        <!--더 낮아진 요금-->
+                                        <div class="lodging-list-tag-contents">
+                                            <img src="img/tag.svg">
+                                            <span>더 낮아진 요금</span>
+                                        </div>         
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>
+                
+                
+                <!--리스트10-->
+                <div class="lodging-list">
+                    <div class="lodging-list-inner">
+
+                        <!--이미지&좋아요 버튼-->
+                        <div class="lodging-img">
+                            <img src="img/lodging-thum10.JPG">
+                            <button class="favorite-btn">
+                                <span class="material-icons">favorite</span>
+                            </button>
+                        </div>
+
+                        <a href="sub2.html">
+                            <!--숙소 텍스트 부분-->
+                            <div class="lodging-list-txt">
+
+                                <!--숙소 텍스트 상단 (슈퍼호스트 / 숙소유형 / 숙소 이름)-->
+                                <div class="lodging-list-txt-top">
+                                    <span class="super-host-tit">슈퍼 호스트</span>
+                                    <span class="lodging-type">아파트 전체</span>
+                                    <p class="lodging-tit">SNUG HOUSE/Best /Hongdae/River view</p>
+                                    <div class="lodging-list-grade">
+                                        <img src="img/star.svg">
+                                        <p class="lodging-list-grade-txt">4.76<span class="lodging-list-grade-txt-pc"> (80)</span></p>
+                                    </div>                                 
+                                </div>
+
+                                <!--숙소 텍스트 중간 (PC에서만 보여짐)-->
+                                <div class="lodging-list-txt-mid">
+                                    <p>인원 3명 · 침실 1개 · 침대 2개 · 욕실 1개</p>
+                                    <p>주방 · 무료 주차 공간 · 무선 인터넷 · 헤어드라이어</p>
+                                </div>
+
+                                <!--숙소 텍스트 하단-->
+                                <div class="lodging-list-txt-bottom">
+
+                                    <!--숙소 요금-->
+                                    <div class="lodging-price-outer">
+                                        <div class="lodging-price">
+                                            <p class="lodging-list-origin-price"><b>₩92,091</b></p>
+                                            <p class="lodging-list-discount-price"><b>₩83,384</b>/1박</p>
+                                        </div>
+                                        <div class="lodging-price-total">
+                                            <p>총 요금 : ₩166,768</p>
+                                        </div>  
+                                    </div>    
+
+                                    <!--숙소 태그-->
+                                    <div class="lodging-list-tag">
+                                        <!--더 낮아진 요금-->
+                                        <div class="lodging-list-tag-contents">
+                                            <img src="img/tag.svg">
+                                            <span>더 낮아진 요금</span>
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                </div>                
+                
+                
+                
+                
+                <div class="sub1-page-nav">
+                    <div class="sub1-page-nav-inner">
+                        <ul>
+                            <li class="page-1">
+                                <a href="#">1</a>
+                            </li>
+                            <li class="page-2">
+                                <a href="#">2</a>
+                            </li>
+                            <li class="page-3">
+                                <a href="#">3</a>
+                            </li>
+                            <li class="other-page">
+                                ···
+                            </li>
+                            <li class="page-last">
+                                <a href="#">15</a>
+                            </li>                            
+                            <li class="next-page-arrow">
+                                <a href="#">
+                                    <span class="material-icons">
+                                    keyboard_arrow_right
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sub1-page-nav-txt">
+                            <p>숙소 300개 이상 중 1-10</p>
+                            <span>추가 수수료가 부과됩니다. 세금도 부과될 수 있습니다.</span>
+                        </div>    
+                    </div>    
+                </div>    
+            </div>
+            
+        </div>
+        <div class="search-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50576.80592892404!2d126.94856234648256!3d37.600973529298834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbd2fdd279c4b%3A0x50c7a92e7ab85ce6!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rA!5e0!3m2!1sko!2skr!4v1588077364842!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+             
+            
+    <!--푸터-->
+    <footer>
+        <div class="footer-outer">
+        <div class="footer">
+            <div class=footer-top>
+                <!--소개-->
+                <div class="footer-contents footer01">
+                    <p>소개</p>
+                    <ul>
+                        <li><a href="#">다양성 및 소속감</a></li>
+                        <li><a href="#">접근성</a></li>
+                        <li><a href="#">신뢰와 안정</a></li>
+                        <li><a href="#">Airbnb Citizen</a></li>
+                        <li><a href="#">뉴스룸</a></li>
+                    </ul>    
+                </div>
+
+                <!--커뮤니티-->
+                <div class="footer-contents footer02">
+                    <p>커뮤니티</p>
+                    <ul>
+                        <li><a href="#">에어비앤비 매거진</a></li>
+                        <li><a href="#">에어비앤비 비즈니스 프로그램</a></li>
+                        <li><a href="#">친구 초대하기</a></li>
+                        <li><a href="#">채용정보</a></li>
+                    </ul>  
+                </div>
+
+                <!--호스팅하기-->
+                <div class="footer-contents footer03">
+                    <p>호스팅하기</p>
+                    <ul>
+                        <li><a href="#">숙소 호스팅</a></li>
+                        <li><a href="#">체험 호스팅</a></li>
+                        <li><a href="#">책임감 있는 호스팅</a></li>
+                        <li><a href="#">Open Homes</a></li>
+                        <li><a href="#">올림픽</a></li>
+                        <li><a href="#">자료센터</a></li>
+                    </ul>  
+                </div>
+
+                <!--에어비앤비 지원-->
+                <div class="footer-contents footer04">
+                    <p>에어비앤비 지원</p>
+                    <ul>
+                        <li><a href="#">도움센터</a></li>
+                        <li><a href="#">에어비앤비 이웃 민원 지원</a></li>
+                    </ul>  
+                </div>
+            </div> 
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <div class="footer-lang">
+                        <a href="#">
+                            <img src="img/language.svg">
+                            <span>한국어(KR)</span>
+                        </a>
+                        <a href="#">
+                            ₩ <span>KRW</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-sns">
+                        <a href="https://www.facebook.com/AirbnbKorea" target="_blank">
+                            <img src="./img/facebook.svg">
+                        </a>
+                        <a href="https://twitter.com/airbnb" target="_blank">
+                            <img src="./img/twitter.svg">
+                        </a>
+                        <a href="https://www.instagram.com/airbnb/" target="_blank">
+                            <img src="./img/instagram.svg">
+                        </a>
+                        <a href="https://blog.naver.com/airbnbkr" target="_blank">
+                            <img src="./img/blog.png">
+                        </a>
+                        <a href="https://post.naver.com/airbnb_kr" target="_blank">
+                            <img src="./img/post.png">
+                        </a>
+                    </div>
+                </div>    
+                <div class="footer-copyright">
+                    <p>© 2020 Airbnb, Inc. All rights reserved</p>
+                    <a href="#">개인정보 처리방침</a>
+                    <span>·</span>
+                    <a href="#">이용약관</a>
+                    <span>·</span>
+                    <a href="#">사이트맵</a>
+                    <span>·</span>
+                    <a href="#">한국의 변경된 환불정책</a>
+                </div>
+            </div>
+        </div> 
+        </div>    
+    </footer>   
+    </body>
+</html>
