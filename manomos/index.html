@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lnag="ko">
+    <head>
+        <title>MANOMOS</title>
+        
+        <!--메타태그-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!--css-->
+        <link rel="stylesheet" href="./style.css">
+        
+        <!--웹폰트-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+        
+        <!--타이틀 아이콘-->
+        <link rel="shortcut icon" type="image⁄x-icon" href="img/icon.jpg">
+        
+        <!--js-->
+        <script src="script/jquery-1.12.3.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                
+                $(".menu li").eq(1).click(function(){
+                    $(".submenu").stop().slideToggle(500);
+                })
+                
+            
+                var height = $(window).height();
+                if(height>=0) {
+                    $(".look-book-contents").animate({'opacity':'1'},500);
+                }
+                
+                $(".btn-menu").click(function(){
+                    $(".mobile-menu").fadeIn(500);
+                })
+                $(".btn-close").click(function(){
+                    $(".mobile-menu").fadeOut(500);
+                })     
+                
+                $(".shop-item-btn button").click(function(){
+                    $(this).toggleClass("on");
+                })
+            })
+            
+        </script>
+    </head>
+    
+    
+    <body>
+        <!--헤더-->
+        <!--데스크탑헤더-->
+              <header>
+                <div class="header-desktop">
+                    <div class="gnb">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./img/logo.png"></a>
+                        </div>
+
+                    <!--검색바-->
+                        <div class="search">
+                            <input type="text">
+                            <button><i class="material-icons">search</i></button>
+                        </div>
+
+                    <!--메뉴-->    
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">SHOP</a>
+                                    <ul class="submenu">
+                                        <li><a href="./sub1.html">GLASSES</a></li>
+                                        <li><a href="./sub1.html">SUNGLASSES</a></li>
+                                        <li><a href="./sub1.html">IZMO</a></li>
+                                        <li><a href="./sub1.html">ACC</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">LOOK BOOK</a></li>
+                                <li><a href="#">PROJECT</a></li>
+                                <li><a href="#">STOCKIST</a></li>
+                                <li><a href="#">BOARD</a></li>
+                            </ul>
+                        </nav>
+
+                    <!--하단회원-->    
+                        <nav class="membership">
+                            <ul>
+                                <li><a href="#">LOGIN</a></li>
+                                <li><a href="#">JOIN US</a></li>
+                                <li><a href="#">CART</a></li>
+                            </ul>
+                        </nav> 
+                    </div> 
+                </div>      
+        
+            <!--모바일헤더-->
+                <div class="header-mobile">
+                    <button class="btn-menu">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png">
+                        </a>
+                    </div>    
+                </div>
+                <div class="mobile-menu">
+                   <button class="btn-close">
+                        <span class="material-icons">close</span>                    
+                   </button>
+                    <ul class="mobile-menu01">
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="./sub1.html">SHOP</a>
+                        </li>
+                        <li><a href="#">LOOK BOOK</a></li>
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="#">STOCKIST</a></li>
+                        <li><a href="#">BOARD</a></li>
+                    </ul>
+                    <ul class="mobile-menu02">
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">JOIN US</a></li>
+                        <li><a href="#">CART</a></li>
+                    </ul>
+                </div>
+            </header>
+        
+            <div class="main-outline">
+                <div class="main-inner">
+            <!--룩북-->
+                <div class="look-book-outline">
+                    <ul class="look-book-list">
+                        <li class="look-book-contents look-book1">
+                            <a href="./sub1.html">
+                                <img src="img/main/lookbook1.png">
+                                <div class="look-book-txt">
+                                    <h3>MANOMOS_BEST GLASSESS</h3>
+                                    <p>마노모스 베스트 안경</p>
+                                </div>
+                            </a>   
+                        </li>
+                        <li class="look-book-contents look-book2">
+                            <a href="./sub1.html">
+                                <img src="img/main/lookbook2.png">
+                                <div class="look-book-txt">
+                                    <h3>ITZMO</h3>
+                                    <p>CRAFTMANSHIP EYEWEAR_ITZMO 2019 COLLECTION</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="look-book-contents look-book3">
+                            <a href="./sub1.html">
+                                <img src="img/main/lookbook3.png">
+                                <div class="look-book-txt">
+                                    <h3>MANOMOS_2020 S/S</h3>
+                                    <p>MANOMOS_5th COLLECTION 'PERSONA'</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="look-book-contents look-book4">
+                            <a href="./sub1.html">
+                                <img src="img/main/lookbook4.png">
+                                <div class="look-book-txt">
+                                    <h3>MANOMOS_BEST SUNGLASSES</h3>
+                                    <p>마노모스 베스트 선글라스</p>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="look-book-contents look-book5">
+                            <a href="./sub1.html">
+                                <img src="img/main/lookbook5.png">
+                                <div class="look-book-txt">
+                                    <h3>MANOMOS_2019 MUSE IN PARIS</h3>
+                                    <p>마노모스와 함께한 파리의 뮤즈들</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="look-book-contents look-book6">
+                            <a href="./sub1.html">
+                                <img src="img/main/lookbook6.png">
+                                <div class="look-book-txt">
+                                    <h3>MANOMOS_2019 F/W</h3>
+                                    <p>CAMPAIGN_SCENE # 1</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>    
+                 <!--플러스버튼-->
+                    <div class="look-book-btn">
+                        <button class="plus-btn"><i class="material-icons">add</i></button>
+                    </div> 
+                </div>
+            
+            
+
+            <!--샵-->    
+                <div class="shop-outline">
+                    <div class="shop-title">
+                        <h2 class="shop-title-txt">SHOP</h2>
+                        <div class="shop-title-line"></div>
+                    </div>
+                    
+                    <ul class="shop-list">
+                        <li class="shop-contents shop-item1">
+                            <a href="./sub2.html">
+                               <img src="./img/main/main-item1.png" class="img-primary">
+                                <img src="./img/main/main-item1-hover.jpg" class="img-hover">
+                                <div class="shop-item-txt">
+                                    <h4>MARRY</h4>
+                                    <p>₩ 198,000</p> 
+                                </div>    
+                            </a>
+                            <div class="shop-item-btn">
+                               <button class="favorite-btn">
+                                   <i class="material-icons">favorite</i>
+                                </button>   
+                            </div>                                     
+                        </li>
+                        <li class="shop-contents shop-item2">
+                            <a href="./sub2.html">
+                               <img src="./img/main/main-item2.png">
+                                <div class="shop-item-txt">
+                                    <h4>MARS</h4>
+                                    <p>₩ 218,000</p>
+                                </div>                          
+                            </a>                        
+                            <div class="shop-item-btn">
+                               <button class="favorite-btn">
+                                   <i class="material-icons">favorite</i>
+                                </button>   
+                            </div>                                     
+                        </li>
+                        <li class="shop-contents shop-item3">
+                            <a href="./sub2.html">
+                                <img src="./img/main/main-item3.png">
+                                <div class="shop-item-txt">
+                                    <h4>COSMOS B</h4>
+                                    <p>₩ 218,000</p>
+                                </div>
+                            </a>
+                                    <div class="shop-item-btn">
+                                       <button class="favorite-btn">
+                                           <i class="material-icons">favorite</i>
+                                        </button>   
+                                    </div>                                        
+                        </li>    
+                        <li class="shop-contents shop-item4">
+                            <a href="./sub2.html">
+                                <img src="./img/main/main-item4.png">
+                                <div class="shop-item-txt">
+                                    <h4>Venus Limited Edition</h4>
+                                    <p>₩ 218,000</p>
+                                    
+                                </div>
+                            </a>
+                            <div class="shop-item-btn">
+                               <button class="favorite-btn">
+                                   <i class="material-icons">favorite</i>
+                                </button>   
+                            </div> 
+                        </li>
+                        <li class="shop-contents shop-item5">
+                            <a href="./sub2.html">
+                               <img src="./img/main/main-item5.png" class="img-primary">
+                                <img src="./img/main/main-item5-hover.jpg" class="img-hover"> 
+                                <div class="shop-item-txt">
+                                    <h4>JUPITER</h4>
+                                    <p>₩ 198,000</p>
+                                </div>
+                            </a>
+                                    <div class="shop-item-btn">
+                                       <button class="favorite-btn">
+                                           <i class="material-icons">favorite</i>
+                                        </button>   
+                                    </div>                                     
+                        </li>
+                        <li class="shop-contents shop-item6">
+                            <a href="./sub2.html">
+                                <img src="./img/main/main-item6.png">
+                                <div class="shop-item-txt">
+                                    <h4>HARRY</h4>
+                                    <p>₩ 218,000</p>
+                                </div>
+                            </a>
+                             <div class="shop-item-btn">
+                               <button class="favorite-btn">
+                                   <i class="material-icons">favorite</i>
+                                 </button>   
+                            </div>                                    
+                        </li>    
+                        <li class="shop-contents shop-item7">
+                            <a href="./sub2.html">
+                               <img src="./img/main/main-item7.png" class="img-primary">
+                                <img src="./img/main/main-item7-hover.jpg" class="img-hover"> 
+                                <div class="shop-item-txt">
+                                    <h4>SKY</h4>
+                                    <p>₩ 218,000</p>
+                                </div>
+                            </a>
+                            <div class="shop-item-btn">
+                                <button class="favorite-btn">
+                                    <i class="material-icons">favorite</i> 
+                                </button>   
+                            </div>                                   
+                        </li>
+                        <li class="shop-contents shop-item8">
+                            <a href="./sub2.html">
+                                <img src="./img/main/main-item8.png">
+                                <div class="shop-item-txt">
+                                    <h4>GRAVITY</h4>
+                                    <p>₩ 198,000</p>
+                                </div>
+                            </a>
+                             <div class="shop-item-btn">
+                               <button class="favorite-btn">
+                                   <i class="material-icons">favorite</i>
+                                 </button>   
+                            </div>                                   
+                        </li>
+                        <li class="shop-contents shop-item9">
+                            <a href="./sub2.html">
+                               <img src="./img/main/main-item9.png" class="img-primary">
+                                <img src="./img/main/main-item9-hover.jpg" class="img-hover"> 
+                                <div class="shop-item-txt">
+                                    <h4>BEAST</h4>
+                                    <p>₩ 218,000</p>
+                                </div>
+                            </a>
+                              <div class="shop-item-btn">
+                               <button class="favorite-btn">
+                                   <i class="material-icons">favorite</i>
+                                  </button>   
+                            </div>                                   
+                        </li>                          
+                    </ul>  
+                </div>
+                </div>    
+            
+            <!--푸터-->
+            <footer>
+                <div class="footer">
+                        <div class="footer-inner">
+                        <p class="footer-txt">
+                            <span>COMPANY.</span> MANOMOS EYEWEAR Inc.   <span>OWNER.</span> Dae-gil Han   <span>BUSINESS NUMBER.</span> 815-87-00188   <span>E-BUSINESS.</span> 제 2016-고양일산서-0006호 <br>
+                            <span> TEL.</span>  02-2218-3064    <span>E-MAIL.</span> manomos@manomos.com   <span> ADDRESS.</span>  92 , Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea<br>
+                            Copyright © MANOMOS. All rights reserved.   Privacy Policy / Terms Of Use / Shop Guide            
+                        </p>
+                        <div class="footer-sns">
+                            <a href="https://www.instagram.com/manomos.official/"><img src="img/icon-insta.svg"></a>
+                            <a href="https://www.facebook.com/manomoseyewear/"><img src="img/icon-facebook.svg"></a>
+                        </div>
+                    </div>
+                </div>    
+            </footer>             
+        </div> 
+    </body>
+</html>

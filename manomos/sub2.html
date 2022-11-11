@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MANOMOS</title>
+        
+        <!--메타태그-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!--css-->
+        <link rel="stylesheet" href="./style.css">
+        
+        <!--웹폰트-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">  
+        
+        <!--타이틀 아이콘-->
+        <link rel="shortcut icon" type="image⁄x-icon" href="img/icon.jpg">
+        
+        <!--js-->
+        <script src="script/jquery-1.12.3.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                
+                $(".menu li").eq(1).click(function(){
+                    $(".submenu").stop().slideToggle(500);
+                })
+                
+                
+                $(".btn-menu").click(function(){
+                    $(".mobile-menu").fadeIn(500);
+                })
+                $(".btn-close").click(function(){
+                    $(".mobile-menu").fadeOut(500);
+                })  
+                
+                $(".sub2-item-color button").click(function(){
+                    $(this).css({"border":"1px solid #000"})
+                   var va = $("sub2-item-color button").val();
+                    console.log(va)
+                })
+                
+                $(".sub2-favorite-btn").click(function(){
+                    $(this).children().eq(0).hide();
+                    $(this).children().eq(1).show();
+                })
+                
+                $(".btn-buy-now").click(function(){
+                    alert("로그인 하셔야 사용하실 수 있습니다.")
+                })
+                
+                $(".btn-add-cart").click(function(){
+                    alert("로그인 하셔야 사용하실 수 있습니다.")
+                })                
+            })
+            
+        </script>        
+    </head>
+    
+    <body>
+        <!--헤더-->
+        <!--데스크탑헤더-->
+              <header>
+                <div class="header-desktop">
+                    <div class="gnb">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./img/logo.png"></a>
+                        </div>
+
+                    <!--검색바-->
+                        <div class="search">
+                            <input type="text">
+                            <button><i class="material-icons">search</i></button>
+                        </div>
+
+                    <!--메뉴-->    
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">SHOP</a>
+                                    <ul class="submenu" style="display: inherit">
+                                        <li><a href="./sub1.html" style="opacity:0.7">GLASSES</a></li>
+                                        <li><a href="./sub1.html">SUNGLASSES</a></li>
+                                        <li><a href="./sub1.html">IZMO</a></li>
+                                        <li><a href="./sub1.html">ACC</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">LOOK BOOK</a></li>
+                                <li><a href="#">PROJECT</a></li>
+                                <li><a href="#">STOCKIST</a></li>
+                                <li><a href="#">BOARD</a></li>
+                            </ul>
+                        </nav>
+
+                    <!--하단회원-->    
+                        <nav class="membership">
+                            <ul>
+                                <li><a href="#">LOGIN</a></li>
+                                <li><a href="#">JOIN US</a></li>
+                                <li><a href="#">CART</a></li>
+                            </ul>
+                        </nav> 
+                    </div> 
+                </div>      
+            </header>
+        
+            <!--모바일헤더-->
+            <header>
+                <div class="header-mobile">
+                    <button class="btn-menu" style="z-index: 100">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png">
+                        </a>
+                    </div>  
+                </div>
+                <div class="mobile-menu">
+                   <button class="btn-close">
+                        <span class="material-icons">close</span>                    
+                   </button>
+                    <ul class="mobile-menu01">
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="./sub1.html">SHOP</a>
+                        </li>
+                        <li><a href="#">LOOK BOOK</a></li>
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="#">STOCKIST</a></li>
+                        <li><a href="#">BOARD</a></li>
+                    </ul>
+                    <ul class="mobile-menu02">
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">JOIN US</a></li>
+                        <li><a href="#">CART</a></li>
+                    </ul>
+                </div>                    
+            </header>
+        
+        <div class="contents-sub2"> 
+            
+        <!---상품정보 시작----->
+            <div class="sub2-item">
+                <!--상품 썸넬&정보-->
+                    <div class="sub2-item-thum">
+                        <img src="img/sub2/item_detail01.png">
+                    </div>
+                    
+                    <div class="sub2-item-txt"> <!--포지션 픽스--->
+                        <!--제품이름 가격 설명-->
+                        <div class="sub2-item-txt-intrduction">
+                            <h1>GRAVITY</h1>
+                            <p class="sub2-item-txt-price">₩ 198,000</p>
+                            <p class="sub2-item-txt-desc">GRAVITY 컬렉션은 심플하면서 유니크한 무드를 연출합니다. <br>4가지 컬러로 구성되어 있는 GRAVITY를 통해 감각적인 스타일링을 완성해보세요.</p>
+                            
+                            <div class="sub2-item-txt-intrduction-btn">
+                                <button>
+                                    <span class="material-icons">
+                                    share
+                                    </span>
+                                </button>
+                                <button class="sub2-favorite-btn">
+                                    <span class="material-icons">
+                                        favorite_border
+                                    </span>
+                                    <span class="material-icons" style="display: none">
+                                    favorite
+                                    </span>                                
+                                </button>    
+                            </div>
+                        </div>
+                        
+                        
+                        <!--제품 컬러 선택-->
+                        <div class="sub2-item-color">
+                            <h2>COLOR(4)</h2>
+                            <button value="black"><img src="img/sub2/item_color01.png"></button>
+                            <button value="silver"><img src="img/sub2/item_color02.png"></button>
+                            <button value="grey"><img src="img/sub2/item_color03.png"></button>
+                            <button value="glod"><img src="img/sub2/item_color04.png"></button>                        
+                        </div> 
+                        
+                        <!--구매하기 / 장바구니 버튼-->
+                        <div class="sub2-item-btn">
+                            <button class="btn-buy-now">BUY NOW</button>
+                            <button class="btn-add-cart">ADD CART</button>
+                        </div> 
+                        
+                        <!--제품 상세정보-->
+                        <div class="sub2-item-detail">
+                            <h2>제품 상세정보</h2>
+                            <ul>
+                                <li>렌즈가로 50mm, 코 브릿지 21mm, 다리길이 145mm</li>
+                                <li>제품소재 : 아세테이트, 티타늄, 금속(메탈) 중 사용</li>
+                                <li>취급 주의사항 : 고온, 고열, 충격 주의</li>
+                                <li>제조사 : (주)마노모스</li>
+                                <li>무료배송 및 무료반품</li>
+                                <li>평일 오전 10시까지 주문 시 당일 출하됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+   
+                    <!--상품 사진-->
+                    <div class="sub-item-img">
+                        <img src="img/sub2/item_detail02.png">
+                        <img src="img/sub2/item_detail03.png">
+                        <img src="img/sub2/item_detail04.png">
+                        <img src="img/sub2/item_detail05.png">           
+                    </div>
+            </div>
+            
+        
+
+                
+         <!--푸터-->
+
+            <footer>
+                <div class="footer">
+                    <p class="footer-txt">
+                        <span>COMPANY.</span> MANOMOS EYEWEAR Inc.   <span>OWNER.</span> Dae-gil Han   <span>BUSINESS NUMBER.</span> 815-87-00188   <span>E-BUSINESS.</span> 제 2016-고양일산서-0006호 <br>
+                        <span> TEL.</span>  02-2218-3064    <span>E-MAIL.</span> manomos@manomos.com   <span> ADDRESS.</span>  92 , Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea<br>
+                        Copyright © MANOMOS. All rights reserved.   Privacy Policy / Terms Of Use / Shop Guide            
+                    </p>
+                    <div class="footer-sns">
+                        <a href="#"><img src="./img/icon-insta.svg"></a>
+                        <a href="#"><img src="./img/icon-facebook.svg"></a>
+                    </div>
+                </div>
+            </footer>     
+        </div>       
+    </body>
+</html>
