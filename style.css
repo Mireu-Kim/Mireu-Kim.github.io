@@ -110,4 +110,4 @@ button {outline:none; cursor:pointer; background:none;}
 	.portfolio .list {width:calc(24%); margin-left:1.3%;}
 	.portfolio .list:nth-child(4n+1) {margin-left:0;}
 	.portfolio .list:nth-child(n+4) {margin-bottom:0;}
-}
+} 
