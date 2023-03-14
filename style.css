@@ -101,10 +101,10 @@ button {outline:none; cursor:pointer; background:none;}
 .portfolio .txt-wrap .bottom p {font-size: 14px; color:#7b7b7b;}
 
 @media (min-width:767px) {
-	.portfolio .cont {display:flex; flex-wrap:wrap; justify-content:space-between;}
+	.portfolio .cont {display:flex; flex-wrap:wrap; justify-content:flex-start;}
 	.portfolio .list {width:49%;}
 }
-
+ 
 @media (min-width:1280px) {
 	.portfolio .list {width:calc(24%); margin-left:1.3%;}
 	.portfolio .list:nth-child(4n+1) {margin-left:0;}
