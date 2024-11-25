@@ -4,65 +4,70 @@
 * {padding:0; border:0; margin:0; font-family:'Noto Sans', 'Noto Sans KR', sans-serif; font-size:16px; line-height:20px;}
 body {background-color:#000;}
 a {text-decoration:none; color:#fff;}
-h3,p,span {color:#fff;}
+h1,h2,h3,p,span {color:#fff;}
 ul, ol {list-style:none;}
 button {outline:none; cursor:pointer; background:none;}
 
 /*============================ CONTAINER ============================ */
 #container {max-width:1280px; margin:0 auto; padding:0 16px;}
-#container .wrap {margin-bottom:50px;}
+#container .wrap {margin-bottom:80px;}
 #container .wrap:last-child {margin-bottom:100px;}
-#container h3 {font-size:20px; font-family:'Roboto', sans-serif;}
+#container .tit {font-size:20px; font-family:'Roboto', sans-serif;}
 #container .date {font-size:14px; color:#7b7b7b;}
 
 /* CONTAINER - PC */
 @media (min-width:1280px) {
-    #container {padding:0;}
-	#container .wrap {margin-bottom:80px;}
+    #container {padding:10px;}
 }
 
 /*============================ intro ============================ */
 .intro {display:table; width:100%; height:100vh;}
 .intro .wrap {display:table-cell; vertical-align:middle;}
-.intro .wrap p {font-size:50px; line-height:1.2em; font-family:'Roboto', sans-serif;}
-.intro .wrap .bold {font-size:50px; font-weight:900; font-family:'Roboto', sans-serif; }
+.intro .wrap * {font-size:50px; line-height:1.2em; font-family:'Roboto', sans-serif;}
+.intro .wrap h1 {font-weight:400;}
 
 
 
 /*============================ profile ============================ */
-.profile .tit {margin-bottom:20px;}
+.profile .tit {margin-bottom:32px;}
 
 
 /*============================ education ============================ */
 /* education */
-.education .cont .list {width:100%; margin-top:20px;}
+.education .list {margin-top:32px;}
+.education .list li + li {margin-top:24px;}
+.education .list li .date {margin-top:8px;}
 
 /* education - tablet */
 @media (min-width:767px) {
-	.education .cont {overflow:hidden;}
-	.education .cont .list {width:calc(50% - 20px); float:left;}
+	.education .list {display:flex; gap:20px;}
+	.education .list li {width:250px;}
+	.education .list li + li {margin-top:0;}
+
 }
 
 /* education - PC */
 @media (min-width: 1280px) {
-	.education .cont .list {width:calc(30% - 20px);}
 }
 
 
 
 /*============================ work ============================ */
 /* work */
-.work .cont .list {width:100%; margin-top:20px;}
+.work .list { margin-top:32px;}
+.work .list li + li {margin-top:24px;}
+.work .list li .date {margin-top:8px;}
 
 /* work - tablet */
 @media (min-width:767px) {
-	.work .cont {overflow:hidden;}
-	.work .cont .list {width:calc(50% - 20px); float:left;}
+	.work .list {display:flex; gap:20px;}
+	.work .list li {width:250px;}
+	.work .list li + li {margin-top:0;}
 }
 
 /* work - PC */
 @media (min-width: 1280px) {
-	.work .cont .list {width:calc(30% - 20px);}
+
 }
 
 
