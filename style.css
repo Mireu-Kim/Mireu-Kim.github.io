@@ -68,8 +68,8 @@ button {outline:none; cursor:pointer; background:none;}
 
 /*============================ skill ============================ */
 /* skill */
-.skill .list { margin-top:32px;}
-.skill .list {display:flex; flex-wrap:wrap; gap:20px;}
+.skill .list {margin-top:32px; display:flex; flex-wrap:wrap; gap:20px;}
+.skill .list li {height:40px;}
 .skill .list .ico {width:40px;}
 
 /*skill - tablet*/
@@ -87,11 +87,11 @@ button {outline:none; cursor:pointer; background:none;}
 .portfolio .img_wrap:hover .link {display: inherit;}
 .portfolio .img_wrap:hover .thum {filter:brightness(50%);}
 .portfolio .thum {width:100%; height:auto; transition:all 0.5s;}
-.portfolio .link {width:35px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background-color:rgba( 255, 255, 255, 0); display:none; /*기본 안보임*/ transition:all 0.5s;}
+.portfolio .link {width:40px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background-color:rgba( 255, 255, 255, 0); display:none; /*기본 안보임*/ transition:all 0.5s;}
 
 .portfolio .txt_wrap {margin-top:14px;}
 .portfolio .txt_wrap p {word-break:keep-all;}
-.portfolio .txt_wrap .tit {font-size:18px; margin-top:8px; font-weight:700; font-family:'Roboto', sans-serif;}
+.portfolio .txt_wrap .tit {margin-top:8px; font-weight:600;}
 .portfolio .txt_wrap .txt {font-size:16px; margin-top:8px;}
 .portfolio .txt_wrap .bottom {margin-top:8px;}
 .portfolio .txt_wrap .bottom p {font-size: 14px; color:#7b7b7b;}
