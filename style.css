@@ -108,4 +108,5 @@ button {outline:none; cursor:pointer; background:none;}
 	.portfolio .list li {width:calc(100% / 4 - 16px);}
 	.portfolio .list li + li {margin-top:0;}
 	.portfolio .list li:nth-child(n+3) {margin-top:0px;}
+	.portfolio .list li:nth-child(n+5) {margin-top:40px;}
 }
