@@ -1,100 +1,85 @@
 @charset "utf-8";
 
 /*============================ CSS RESET ============================ */
-* {padding:0; border:0; margin:0; font-family:'Noto Sans', 'Noto Sans KR', sans-serif; font-size:16px; line-height:1.5;}
-body {background-color:#000;}
+* {padding:0; border:0; margin:0; font-family:'Noto Sans', 'Noto Sans KR', sans-serif;}
+html {font-size: 10px; line-height:10px;}
+body {background-color:#000; font-size:1.4rem; line-height:1.5;}
 a {text-decoration:none; color:#fff;}
 h1,h2,h3,p,span {color:#fff;}
 ul, ol {list-style:none;}
 button {outline:none; cursor:pointer; background:none;}
 
+
+
+
 /*============================ CONTAINER ============================ */
 #container {max-width:1280px; margin:0 auto; padding:0 16px;}
 #container .wrap {margin-bottom:80px;}
 #container .wrap:last-child {margin-bottom:100px;}
-#container .tit {font-size:20px; font-family:'Roboto', sans-serif;}
-#container .date {font-size:14px; color:#7b7b7b;}
+#container .title {font-size:2rem; margin-bottom:28px;}
+#container .date {font-size:1.4rem; color:#7b7b7b; margin-top:8px;}
 
 /* CONTAINER - PC */
 @media (min-width:1280px) {
     #container {padding:10px;}
+	#container .wrap {margin-bottom:100px;}
+	#container .wrap:last-child {margin-bottom:120px;}
+	#container .title {margin-bottom:32px;}
 }
+
 
 /*============================ intro ============================ */
 .intro {display:table; width:100%; height:100vh;}
 .intro .wrap {display:table-cell; vertical-align:middle;}
-.intro .wrap * {font-size:50px; line-height:1.2em; font-family:'Roboto', sans-serif;}
+.intro .wrap * {font-size:5rem; line-height:1.2em; font-family:'Roboto', sans-serif;}
 .intro .wrap h1 {font-weight:400;}
+.intro .wrap strong {padding-left:4px;}
 
 
 
 /*============================ profile ============================ */
-.profile .tit {margin-bottom:32px;}
+.profile .txt {font-size:1.6rem;}
 
 
-/*============================ education ============================ */
-/* education */
-.education .list {margin-top:32px;}
-.education .list li + li {margin-top:24px;}
-.education .list li .date {margin-top:8px;}
+/*======================= education & work ======================= */
+.career .list li + li {margin-top:24px;}
+.career .list li .txt {font-size:1.6rem;}
 
-/* education - tablet */
+/* tablet ~ */
 @media (min-width:767px) {
-	.education .list {display:flex; gap:20px;}
-	.education .list li {width:250px;}
-	.education .list li + li {margin-top:0;}
-
-}
-
-/* education - PC */
-@media (min-width: 1280px) {
-}
-
-
-
-/*============================ work ============================ */
-/* work */
-.work .list { margin-top:32px;}
-.work .list li + li {margin-top:24px;}
-.work .list li .date {margin-top:8px;}
-
-/* work - tablet */
-@media (min-width:767px) {
-	.work .list {display:flex; gap:20px;}
-	.work .list li {width:250px;}
-	.work .list li + li {margin-top:0;}
+	.career .list {display:flex; gap:20px;}
+	.career .list li {max-width:250px; width:250px;}
+	.career .list li + li {margin-top:0px;}
 }
 
 
 /*============================ skill ============================ */
-/* skill */
-.skill .list {margin-top:32px; display:flex; flex-wrap:wrap; gap:20px;}
-.skill .list li {height:40px;}
-.skill .list .ico {width:40px;}
+.skill .list {display:flex; flex-wrap:wrap; gap:20px;}
+.skill .list li  {width:4rem; height:4rem;}
+.skill .list .ico {width:100%; height:auto;}
 
-/*skill - tablet*/
+/* tablet ~ */
 @media (min-width:767px) {
     .skill .list {gap:30px;}
 }
 
 
 /*============================ portfolio============================ */
-.portfolio .list {margin-bottom:80px;}
 .portfolio .list li + li {margin-top:40px;}
 
 .portfolio .img_wrap {position:relative;}
 .portfolio .img_wrap a {transition:all 0.5s;}
 .portfolio .img_wrap:hover .link {display: inherit;}
 .portfolio .img_wrap:hover .thum {filter:brightness(50%);}
-.portfolio .thum {width:100%; height:auto; transition:all 0.5s;}
-.portfolio .link {width:40px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background-color:rgba( 255, 255, 255, 0); display:none; /*기본 안보임*/ transition:all 0.5s;}
+.portfolio .img_wrap .thum {width:100%; height:auto; transition:all 0.5s;}
+.portfolio .img_wrap .link {width:40px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); display:none; /*기본 안보임*/ transition:all 0.5s;}
 
-.portfolio .txt_wrap {margin-top:14px;}
+.portfolio .txt_wrap {margin-top:16px;}
 .portfolio .txt_wrap p {word-break:keep-all;}
-.portfolio .txt_wrap .tit {margin-top:8px; font-weight:600;}
-.portfolio .txt_wrap .txt {font-size:16px; margin-top:8px;}
+.portfolio .txt_wrap .top .tit {font-size:1.8rem; font-weight:600;}
+.portfolio .txt_wrap .top .txt {font-size:1.6rem; margin-top:8px;}
 .portfolio .txt_wrap .bottom {margin-top:8px;}
-.portfolio .txt_wrap .bottom p {font-size: 14px; color:#7b7b7b;}
+.portfolio .txt_wrap .bottom p {font-size:1.4rem; color:#7b7b7b;}
 
 @media (min-width:767px) {
 	.portfolio .list {display:flex; flex-wrap:wrap; justify-content:space-between;}
@@ -104,9 +89,7 @@ button {outline:none; cursor:pointer; background:none;}
 }
 
 @media (min-width:1280px) {
-	.portfolio .list {margin-bottom:120px;}
 	.portfolio .list li {width:calc(100% / 4 - 16px);}
-	.portfolio .list li + li {margin-top:0;}
 	.portfolio .list li:nth-child(n+3) {margin-top:0px;}
 	.portfolio .list li:nth-child(n+5) {margin-top:40px;}
 }
