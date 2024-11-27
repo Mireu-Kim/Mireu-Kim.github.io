@@ -75,8 +75,14 @@ button {outline:none; cursor:pointer; background:none;}
 
 .portfolio .txt_wrap {margin-top:16px;}
 .portfolio .txt_wrap p {word-break:keep-all;}
-.portfolio .txt_wrap .top .tit {font-size:1.8rem; font-weight:600;}
+.portfolio .txt_wrap .top .tit {font-size:1.8rem; font-weight:600; display:flex; align-items:center;}
 .portfolio .txt_wrap .top .txt {font-size:1.6rem; margin-top:8px;}
+.portfolio .txt_wrap .top .badge {font-size:1.2rem; border-radius:16px; padding:1px 6px; display:inline-block;}
+.portfolio .txt_wrap .top .badge:first-child {margin-left:8px;}
+.portfolio .txt_wrap .top .badge + .badge {margin-left:6px;}
+.portfolio .txt_wrap .top .badge.pc {border:1px solid #d9d2e9; color:#d9d2e9;}
+.portfolio .txt_wrap .top .badge.mo {border:1px solid #3576ae; color:#3576ae;}
+.portfolio .txt_wrap .top .badge.app {border:1px solid #3e9c34; color:#3e9c34;}
 .portfolio .txt_wrap .bottom {margin-top:8px;}
 .portfolio .txt_wrap .bottom p {font-size:1.4rem; color:#7b7b7b;}
 
