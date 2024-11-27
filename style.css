@@ -16,7 +16,7 @@ button {outline:none; cursor:pointer; background:none;}
 #container {max-width:1280px; margin:0 auto; padding:0 16px;}
 #container .wrap {margin-bottom:80px;}
 #container .wrap:last-child {margin-bottom:120px;}
-#container .title {font-size:2rem; margin-bottom:28px;}
+#container .title {font-size:2rem; margin-bottom:28px; letter-spacing:1px;}
 #container .date {font-size:1.4rem; color:#7b7b7b; margin-top:8px;}
 
 /* CONTAINER - PC */
