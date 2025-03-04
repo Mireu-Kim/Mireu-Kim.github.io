@@ -87,7 +87,7 @@ button {outline:none; cursor:pointer; background:none;}
 .portfolio .txt_wrap .bottom p {font-size:1.4rem; color:#7b7b7b;}
 
 @media (min-width:767px) {
-	.portfolio .list {display:flex; flex-wrap:wrap; justify-content:space-between;}
+	.portfolio .list {display:flex; flex-wrap:wrap; justify-content:flex-start; gap:20px;}
 	.portfolio .list li {width:calc(100% / 2 - 16px); margin-top:0;}
 	.portfolio .list li + li {margin-top:0;}
 	.portfolio .list li:nth-child(n+3) {margin-top:40px;}
