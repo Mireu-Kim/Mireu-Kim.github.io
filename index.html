@@ -1,342 +1,265 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>Mi-Reu Web Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="/images/img_thum.png">
-        <link rel="stylesheet" href="./style.css">
-
-        <!-- 메테리얼아이콘 -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-
-        <!-- 구글폰트 -->
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-
-        <!-- 파비콘 -->
-        <link rel="shortcut icon" type="image⁄x-icon" href="/images/ico_favicon.png">
-    </head>
+	<head>
+		<title>김미르 | 웹 포트폴리오</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="./assets/images/img_thum.png">
+		<link rel="shortcut icon" type="image⁄x-icon" href="./assets/images/ico_favicon.png">
+		<link rel="stylesheet" href="./assets/css/reset.css">
+		<link rel="stylesheet" href="./assets/css/common.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+		<script type="text/javascript" src="./assets/js/common.js"></script>
+	</head>
 	<body>
 
-		<!-- #CONTAIMER -->
+		<!-- HEADER -->
+		<header>
+			<div id="header">
+				<nav>
+					<div class="logo_wrap">
+						<h1><a href="#intro">Mireu's Web Portfolio</a></h1>
+					</div>
+					<ul>
+						<li><a href="#about">ABOUT ME</a></li>
+						<li><a href="#work">WORK</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--// HEADER -->
+
 		<div id="container">
 			<!-- intro -->
-			<div class="intro">
+			<div id="intro" class="section__intro scroll_text">
 				<div class="wrap">
-					<h1>KIM MIREU<br>
-						<strong>WEB PORTFOLIO</strong>
-					</h1>
+					<h2>KIM MIREU's<br>PORTFOLIO</h2>
+					<p class="text">
+						안녕하세요. 웹퍼블리셔 김미르입니다.<br>
+						최신 웹 기술에 대한 깊은 이해와 웹 접근성, 다양한 대형 프로젝트 경험을 바탕으로<br>사용자 중심의 웹사이트를 구축하는데 강점을 가지고 있습니다.
+					</p>
 				</div>
 			</div>
 
-			<!-- profile -->
-			<div class="wrap profile">
-				<h2 class="title">김미르 (KIM MIREU)</h2>
-				<p class="txt">
-					1997.08.20 <br>
-					010 - 3706 - 8904 <br>
-					s9288365@naver.com
-				</p>
-			</div>
+			<!-- About Me -->
+			<div id="about" class="section__about">
+				<h3 class="section__title scroll_text">ABOUT ME</h3>
+				<div class="profile">
+					<div class="img_wrap">
+						<img src="./assets/images/img_profile.png" alt="프로필">
+					</div>
+					<div class="text_wrap">
+						<p class="text">웹 퍼블리셔로서 사용자 중심의 UI 구현과 웹 표준을 중요하게 생각하는 김미르입니다.</p>
+						<p class="text">새로운 기술과 트렌드를 배우는 것을 즐기고 꾸준히 성장하기 위해 노력하고 있으며,<br>
+										디자인, 개발, 기획 등 다양한 파트와의 원활한 협업과 커뮤니케이션을 통해 더 나은 결과물을 만들어왔습니다.</p>
+						<p class="text">작은 부분도 놓치지 않으려는 꼼꼼함과 책임감을 바탕으로 일에 임하고 있습니다.<br>
+										항상 열린 마음으로 소통하며 팀워크를 중요하게 생각합니다.</p>
+						<p class="text">앞으로도 더 나은 웹 서비스를 위해 끊임없이 배우고 도전하겠습니다.</p>
+						<a href="https://www.notion.so/1f9c70dd46df807789f6e70710f2ed80" target="_blank" class="link">자기소개 더보기</a>
 
-			<!-- Education -->
-			<div class="wrap career">
-				<h3 class="title">EDUCATION</h3>
-				<ul class="list">
-					<li>
-						<p class="txt">
-							한국방송통신대학교<br>
-							컴퓨터과학과 졸업
-						</p>
-						<p class="date">2020.09 - 2024.02</p>
-					</li>
-					<li>
-						<p class="txt">
-							리메인<br>
-							웹프로페셔널 과정 수료
-						</p>
-						<p class="date">2019.12 - 2020.07</p>
-					</li>
-					<li>
-						<p class="txt">
-							연희직업전문학교<br>
-							디지털 반응형 웹디자인 과정 수료
-						</p>
-						<p class="date">2018.07 - 2018.12</p>
-					</li>
-					<li>
-						<p class="txt">
-							숭의여자대학교<br>
-							경영전공
-						</p>
-						<p class="date">2016.03 - 2018.02</p>
-					</li>
-				</ul>
+						<div class="skill_wrap">
+							<h4 class="sub__title">SKILLS</h4>
+							<ul class="skill">
+								<li>
+									<img src="./assets/images/img_skill01.png" alt="html">
+									<span>HTML5</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill02.png" alt="css">
+									<span>CSS</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill03.png" alt="javascript">
+									<span>Javascript</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill04.png" alt="vue">
+									<span>Vue</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill05.png" alt="scss">
+									<span>SCSS</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill06.png" alt="jQuery">
+									<span>jQuery</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill07.png" alt="git">
+									<span>Git</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill08.png" alt="sourcetree">
+									<span>Sourcetree</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill09.png" alt="zeplin">
+									<span>Zeplin</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill10.png" alt="figma">
+									<span>Figma</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill11.png" alt="xd">
+									<span>XD</span>
+								</li>
+								<li>
+									<img src="./assets/images/img_skill12.png" alt="photoshop">
+									<span>Photoshop</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cont_wrap">
+					<div class="cont">
+						<h4 class="sub__title scroll_text">WORK EXPERIENCE</h4>
+						<ul>
+							<li><span class="date">2022.10 ~ 재직중</span>(주)와일리 퍼블리싱그룹</li>
+							<li><span class="date">2022.01 ~ 2022.10</span>(주)에이블유컴즈 프리랜서</li>
+							<li><span class="date">2020.11 ~ 2021.10</span>(주)티앤에스컴퍼니 제작팀</li>
+						</ul>
+					</div>
+					<div class="cont">
+						<h4 class="sub__title scroll_text">EDUCATION</h4>
+						<ul>
+							<li><span class="date">2020.09 ~ 2024.02</span>한국방송통신대학교 컴퓨터과학과 졸업</li>
+							<li><span class="date">2019.12 ~ 2020.07</span>리메인 웹프로페셔널 과정 수료</li>
+							<li><span class="date">2018.07 ~ 2018.02</span>연희직업전문학교 디지털 반응형 웹디자인 과정 수료</li>
+							<li><span class="date">2016.03 ~ 2018.02</span>숭의여자대학교 경영과 졸업</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<!-- Work -->
-			<div class="wrap career">
-				<h3 class="title">WORK</h3>
-				<ul class="list">
-					<li>
-						<p class="txt">
-							(주)와일리<br>
-							퍼블리싱그룹 근무
-						</p>
-						<p class="date">2022.10 - 재직중</p>
-					</li>
-					<li>
-						<p class="txt">
-							(주)에이블유컴즈<br>
-							프리랜서
-						</p>
-						<p class="date">2022.01 - 2022.10</p>
-					</li>
-					<li>
-						<p class="txt">
-							(주)티앤에스컴퍼니<br>
-							제작팀 근무
-						</p>
-						<p class="date">2020.11 - 2021.10</p>
-					</li>
-				</ul>
-			</div>
-
-			<!-- skill -->
-			<div class="wrap skill">
-				<h3 class="title">SKILLS</h3>
-				<ul class="list">
-					<li>
-						<img src="/images/ico_skill01.png" class="ico" alt="HTML5">
-					</li>
-					<li>
-						<img src="/images/ico_skill02.png" class="ico" alt="CSS3">
-					</li>
-					<li>
-						<img src="/images/ico_skill03.png" class="ico" alt="javascript">
-					</li>
-					<li>
-						<img src="/images/ico_skill04.png" class="ico" alt="vue">
-					</li>
-					<li>
-						<img src="/images/ico_skill05.png" class="ico" alt="scss">
-					</li>
-					<li>
-						<img src="/images/ico_skill06.png" class="ico" alt="jQuery">
-					</li>
-					<li>
-						<img src="/images/ico_skill07.png" class="ico" alt="git">
-					</li>
-					<li>
-						<img src="/images/ico_skill08.png" class="ico" alt="source tree">
-					</li>
-					<li>
-						<img src="/images/ico_skill09.png" class="ico" alt=" zepline">
-					</li>
-					<li>
-						<img src="/images/ico_skill10.png" class="ico" alt="figma">
-					</li>
-					<li>
-						<img src="/images/ico_skill11.png" class="ico" alt="sketch">
-					</li>
-					<li>
-						<img src="/images/ico_skill12.png" class="ico" alt="xd">
-					</li>
-					<li>
-						<img src="/images/ico_skill13.png" class="ico" alt="photoshop">
-					</li>
-				</ul>
-			</div>
-
-			<!-- Portfolio -->
-			<div class="wrap portfolio">
-				<ul class="list">
-					<!-- KB -->
-					<li>
-						<div class="img_wrap">
+			<div id="work" class="section__work">
+				<div class="inner">
+					<h3 class="section__title">WORK</h3>
+					<ul>
+						<li>
 							<a href="#none">
-								<img src="/images/img_work08.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_kb.png" alt="KB Pay">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#mobile</p>
+									<p class="title">KB Pay 3.0 고도화</p>
+									<p class="date">2025.06 ~ 진행중</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">KB Pay
-									<span class="badge mo">MO</span>
-									<span class="badge app">APP</span>
-								</p>
-								<p class="txt">KB Pay 3.0 고도화</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2025.06 - 진행중</p>
-								<p>HTML5 / CSS3 / JavaScript</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- 유앤아이의원원 -->
-					<li>
-						<div class="img_wrap">
+						</li>
+						<li>
 							<a href="https://www.uni114.co.kr/" target="_blank">
-								<img src="/images/img_work07.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_uni.png" alt="유앤아이의원">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#pc #mobile #다국어</p>
+									<p class="title">유앤아이의원 재구축</p>
+									<p class="date">2025.03 ~ 2025.06</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">유앤아이의원
-									<span class="badge pc">PC</span>
-									<span class="badge mo">MO</span>
-								</p>
-								<p class="txt">유앤아이의원 재구축</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2025.03 - 2025.06</p>
-								<p>HTML5 / CSS3 / JavaScript</p>
-							</div>
-						</div>
-					</li>
-					<!-- 메리츠화재 -->
-					<li>
-						<div class="img_wrap">
+						</li>
+						<li>
 							<a href="https://www.meritzfire.com/main.do#!/" target="_blank">
-								<img src="/images/img_work06.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_meritz01.png" alt="메리츠화재">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#pc #mobile</p>
+									<p class="title">메리츠화재 웹접근성 인증마크 갱신</p>
+									<p class="date">2024.12 ~ 2025.02</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">메리츠화재
-									<span class="badge pc">PC</span>
-									<span class="badge mo">MO</span>
-								</p>
-								<p class="txt">메리츠화재 공식몰 웹접근성 인증마크 갱신</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2024.12 - 2025.02</p>
-								<p>HTML5 / CSS3 / JavaScript / Angular</p>
-							</div>
-						</div>
-					</li>
-					<!-- NH Pay -->
-					<li>
-						<div class="img_wrap">
-							<a href="https://nhpay.nonghyup.com" target="_blank">
-								<img src="/images/img_work05.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+						</li>
+						<li>
+							<a href="https://nhpay.nonghyup.com/" target="_blank">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_nhpay.png" alt="nhpay">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#mobile</p>
+									<p class="title">농협카드 통합 구축</p>
+									<p class="date">2024.02 ~ 2024.11</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">NH Pay
-									<span class="badge mo">MO</span>
-									<span class="badge app">APP</span>
-								</p>
-								<p class="txt">농협카드 통합 디지털 플랫폼 구축 UX/UI</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2024.02 - 2024.11</p>
-								<p>HTML5 / SCSS / JavaScript / Vue</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- 고용24 -->
-					<li>
-						<div class="img_wrap">
+						</li>
+						<li>
 							<a href="https://www.work24.go.kr/cm/main.do" target="_blank">
-								<img src="/images/img_work04.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_work24.png" alt="고용24">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#pc #mobile</p>
+									<p class="title">고용24 3단계 구축</p>
+									<p class="date">2023.10 ~ 2023.11</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">고용24
-									<span class="badge pc">PC</span>
-									<span class="badge mo">MO</span>
-								</p>
-								<p class="txt">차세대 디지털 고용서비스 플랫폼 고용24(3단계) 구축</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2023.10 - 2023.11</p>
-								<p>HTML5 / CSS3 / JavaScript</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- 메리츠화재 -->
-					<li>
-						<div class="img_wrap">
+						</li>
+						<li>
 							<a href="https://store.meritzfire.com/main.do#!/" target="_blank">
-								<img src="/images/img_work03.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_meritz02.png">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#pc #mobile</p>
+									<p class="title">메리츠화재 공식몰 운영 및 고도화</p>
+									<p class="date">2022.12 ~ 2023.10</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">메리츠화재
-									<span class="badge pc">PC</span>
-									<span class="badge mo">MO</span>
-								</p>
-								<p class="txt">메리츠화재 인터넷 마케팅 플랫폼 운영 및 고도화</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2022.12 - 2023.10</p>
-								<p>HTML5 / CSS3 / JavaScript / Angular</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- 종근당건강몰 -->
-					<li>
-						<div class="img_wrap">
+						</li>
+						<li>
 							<a href="https://ckdhcmall.co.kr/" target="_blank">
-								<img src="/images/img_work02.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_ckdhc.png">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#pc #mobile</p>
+									<p class="title">종근당건강몰 리뉴얼</p>
+									<p class="date">2022.10 ~ 2022.12</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">종근당건강몰
-									<span class="badge pc">PC</span>
-									<span class="badge mo">MO</span>
-									<span class="badge app">APP</span>
-								</p>
-								<p class="txt">종근당건강몰 리뉴얼 UIUX 구축</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2022.10 - 2022.12</p>
-								<p>HTML5 / CSS3 / JavaScript</p>
-							</div>
-						</div>
-					</li>
-
-					<!-- 위택스 -->
-					<li>
-						<div class="img_wrap">
+						</li>
+						<li>
 							<a href="https://www.wetax.go.kr/main.do" target="_blank">
-								<img src="/images/img_work01.png" class="thum">
-								<img src="/images/ico_link.png" class="link">
+								<div class="img_wrap">
+									<img src="./assets/images/img_work_wetax.png">
+								</div>
+								<div class="text_wrap">
+									<p class="hash">#pc</p>
+									<p class="title">위택스 구축</p>
+									<p class="date">2022.01 ~ 2022.10</p>
+								</div>
 							</a>
-						</div>
-						<div class="txt_wrap">
-							<div class="top">
-								<p class="tit">위택스
-									<span class="badge pc">PC</span>
-								</p>
-								<p class="txt">차세대 지방세입정보시스템 위택스 사이트 구축</p>
-							</div>
-							<div class="bottom">
-								<p>Date : 2022.01 - 2022.10</p>
-								<p>HTML5 / CSS3 / JavaScript</p>
-							</div>
-						</div>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
+
+			<footer id="footer">
+				<div class="inner">
+				<div class="info_wrap">
+						<p class="text">함께 일할 웹퍼블리셔를 찾고 계신가요?</p>
+						<p class="email">s9288365@naver.com</p>
+				</div>
+				<a href="mailto:s9288365@naver.com" class="link">메일 보내기</a>
+				<div class="copy_wrap">
+					<p class="text">© 2025 All rights reserved</p>
+					<ul>
+						<li><a href="https://www.notion.so/1f9c70dd46df807789f6e70710f2ed80" target="_blank">RESUME</a></li>
+						<li><a href="https://github.com/Mireu-Kim" target="_blank">GITHUB</a></li>
+					</ul>
+				</div>
+				</div>
+			</footer>
+
+			<!-- Top Button -->
+			<button type="button" class="btn_top" onclick="scrollIntoStart('intro')"></button>
 		</div>
-		<!--// #CONTAIMER -->
 	</body>
 </html>
 
