@@ -15,7 +15,7 @@
 
 
 /*============================ INTRO ============================ */
-.section__intro {height:100vh; display:flex; justify-content:center; flex-direction:column; border:1px solid red;}
+.section__intro {height:100vh; display:flex; justify-content:center; flex-direction:column;}
 .section__intro .wrap {z-index:2;}
 .section__intro h2 {font-size:6rem; font-weight:700;}
 .section__intro .text {margin-top:6rem; font-size:1.8rem; word-break:keep-all;}
