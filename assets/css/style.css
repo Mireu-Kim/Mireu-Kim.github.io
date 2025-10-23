@@ -15,7 +15,7 @@
 
 
 /*============================ INTRO ============================ */
-.section__intro {height:100vh; display:flex; justify-content:center; flex-direction:column;}
+.section__intro {height:100vh; display:flex; justify-content:center; flex-direction:column; border:1px solid red;}
 .section__intro .wrap {z-index:2;}
 .section__intro h2 {font-size:6rem; font-weight:700;}
 .section__intro .text {margin-top:6rem; font-size:1.8rem; word-break:keep-all;}
@@ -41,7 +41,7 @@
 .section__about .skill_wrap ul li img {width:100%; display:block;}
 .section__about .skill_wrap ul li span {display:none; position:absolute; bottom:-1rem; left:50%;transform:translate(-50%, 100%); border:1px solid var(--point-color); color:var(--point-color); padding:0.4rem 1rem; font-size:1.4rem; font-weight:600; transition:0.3s;}
 
-.section__about .cont_wrap {display:flex; gap:10%; margin-top:8rem;}
+.section__about .cont_wrap {display:flex; justify-content:flex-start;  gap:12%; margin-top:8rem;}
 .section__about .cont_wrap ul {margin-top:2.4rem;}
 .section__about .cont_wrap li {font-size:1.8rem; word-break:keep-all;}
 .section__about .cont_wrap li ~ li {margin-top:1.2rem;}
@@ -80,7 +80,7 @@
 
 .section__work li .text_wrap {margin-top:1.2rem; padding:0 0.8rem;}
 .section__work li .hash {color:var(--point-color); font-size:1.6rem;}
-.section__work li .title {font-size:clamp(2rem, 3vw, 2.4rem); font-weight:700; margin-top:0.4rem; transition:0.5s;}
+.section__work li .title {font-size:clamp(2rem, 3vw, 2.4rem); font-weight:700; margin-top:0.8rem; transition:0.5s;}
 .section__work li a:hover .text_wrap .title {color:var(--point-color);}
 .section__work li .date {font-size:clamp(1.6rem, 2vw, 1.8rem); color:var(--sub-font-color); margin-top:0.4rem;}
 

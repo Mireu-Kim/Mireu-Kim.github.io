@@ -81,7 +81,7 @@ div[class^="section__"]:not(.section__work) {position:relative; max-width:1440px
 
 .section__title {font-size:4rem; font-weight:700;}
 .section__title + * {margin-top:6rem;}
-.sub__title {font-size:2rem; font-weight:700;}
+.sub__title {font-size:2.4rem; font-weight:700;}
 
 .btn_top {position:fixed; bottom:4rem; right:4rem; width:4rem; height:4rem; border:1px solid #fff; background:#111 url(../images/ico_arrow_top.svg) no-repeat center center / 2rem;}
 .btn_top:hover {border:1px solid var(--point-color);  background:url(../images/ico_arrow_top_green.svg) no-repeat center center / 2rem;}
