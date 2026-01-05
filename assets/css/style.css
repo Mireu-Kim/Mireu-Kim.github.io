@@ -67,12 +67,8 @@
 
 .section__work {background: #292929 url(../images/bg_text.png) no-repeat fixed center; padding:8rem 2rem;}
 .section__work .inner {max-width:1440px; margin:0 auto;}
-.section__work ul {display:flex; flex-wrap:wrap;}
-.section__work li {width:calc((100% - 4rem) / 2);}
-.section__work li ~ li {margin:4rem 0 0 4rem;}
-.section__work li:nth-child(2) {margin-top:0;}
-.section__work li:nth-child(odd):nth-child(n+3) {margin-left:0;}
-
+.section__work ul {display:flex; flex-wrap:wrap; gap:2.4rem;}
+.section__work li {width: calc((100% - 4.8rem) / 3)};
 .section__work li a {display:block;}
 .section__work li .img_wrap {border-radius:20px;  overflow:hidden;}
 .section__work li img {display:block; width:100%; filter:grayscale(100); transition:0.5s;  transform-origin: center center;}
@@ -84,13 +80,14 @@
 .section__work li a:hover .text_wrap .title {color:var(--point-color);}
 .section__work li .date {font-size:clamp(1.6rem, 2vw, 1.8rem); color:var(--sub-font-color); margin-top:0.4rem;}
 
+@media only screen and (max-width:1080px){
+	.section__work ul {gap:4rem;}
+	.section__work li {width: calc((100% - 4rem) / 2)};
+}
+
 @media only screen and (max-width:767px){
-	.section__work ul li {width:100%; margin:0;}
-	.section__work li ~ li {margin-top:2.4rem;}
-	.section__work li:nth-child(2) {margin-top:2.4rem;}
-	/* .section__work li:nth-child(2n) {margin-left:0;}
-	.section__work li:nth-child(n+3) {margin-top:0;} */
-	.section__work li .hash {font-size:1.4rem;}
+	.section__work ul {row-gap:2.4rem; column-gap:0;}
+	.section__work li {width:100%;}
 }
 
 /*============================ FOOTER ============================ */
