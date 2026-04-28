@@ -35,11 +35,11 @@
 .section__about .profile .text ~ .text {margin-top:2rem;}
 
 .section__about .skill_wrap {margin-top:8rem;}
-.section__about .skill_wrap ul {margin-top:2.4rem; display:flex; flex-wrap:wrap; gap:2rem;}
+.section__about .skill_wrap ul {margin-top:2.4rem; display:flex; flex-wrap:wrap; gap:3rem; max-width:70rem;}
 .section__about .skill_wrap ul li {position:relative; width:5rem; transition:0.3s;}
 .section__about .skill_wrap ul li:hover span {display:inline-block;}
 .section__about .skill_wrap ul li img {width:100%; display:block;}
-.section__about .skill_wrap ul li span {display:none; position:absolute; bottom:-1rem; left:50%;transform:translate(-50%, 100%); border:1px solid var(--point-color); color:var(--point-color); padding:0.4rem 1rem; font-size:1.4rem; font-weight:600; transition:0.3s;}
+.section__about .skill_wrap ul li span {display:none; position:absolute; bottom:-1rem; left:50%;transform:translate(-50%, 100%); border:1px solid var(--point-color); color:var(--point-color); padding:0.4rem 0.2rem; font-size:1.4rem; font-weight:600; transition:0.3s; width:8.4rem; text-align:center; z-index:1; background-color:#111;}
 
 .section__about .cont_wrap {display:flex; justify-content:flex-start;  gap:12%; margin-top:8rem;}
 .section__about .cont_wrap ul {margin-top:2.4rem;}
@@ -53,6 +53,7 @@
 	.section__about .profile .text_wrap {flex:1 1 100%; margin-top:3.2rem;}
 	.section__about .profile .text {font-size:1.6rem;}
 	.section__about .skill_wrap {margin-top:6rem;}
+	.section__about .skill_wrap ul {gap:2rem;}
 	.section__about .skill_wrap ul li {width:4rem;}
 	.section__about .skill_wrap ul li ~ li {margin-left:0;}
 	.section__about .cont_wrap {display:block; margin-top:6rem;}
