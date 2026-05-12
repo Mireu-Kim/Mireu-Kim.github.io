@@ -1,0 +1,11 @@
+{
+  "name": "mireu-kim-github-io",
+  "private": true,
+  "workspaces": ["app"],
+  "scripts": {
+    "dev": "npm run dev -w app",
+    "build": "npm run build -w app",
+    "preview": "npm run preview -w app",
+    "lint": "npm run lint -w app"
+  }
+}
