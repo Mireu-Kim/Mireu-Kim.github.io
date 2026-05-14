@@ -4,15 +4,17 @@ type Skill = { name: string; icon: string; alt: string }
 
 type WorkDetail = {
 	overview: string
-	// image:string
-	contribution:string
+	contribution: string
 	role: string[]
 	stack?: string[]
 }
 
 type Work = {
 	id: string
+	/** 카드 썸네일 등 목록용 이미지 */
 	image: string
+	/** 모달 상단 등 상세용 이미지(없으면 image 사용) */
+	detailImage?: string
 	alt: string
 	hash: string
 	title: string
@@ -67,6 +69,7 @@ const works: Work[] = [
 		id: 'kb-pay',
 		siteUrl: 'https://m.kbcard.com/CMN/DVIEW/KFAMCXHACADC0009',
 		image: 'img_work_kb.png',
+		detailImage: 'img_work_kb_detail.png',
 		alt: 'KB Pay',
 		hash: '#mobile',
 		title: 'KB Pay 3.0 앱/모바일웹 고도화',
@@ -368,9 +371,12 @@ function App() {
 						>
 							×
 						</button>
-						{/* <div className="work_modal__media">
-							<img src={imageUrl(activeWork.detail.image)} alt="" />
-						</div> */}
+						<div className="work_modal__media">
+							<img
+								src={imageUrl(activeWork.detailImage ?? activeWork.image)}
+								alt=""
+							/>
+						</div>
 						<div className="work_modal__body">
 							<p className="work_modal__hash">{activeWork.hash}</p>
 							<h4 id="work-modal-title" className="work_modal__title">
