@@ -263,7 +263,7 @@ function App() {
 					<div className="text_wrap">
 						<p className="text">웹 퍼블리셔로서 사용자 중심의 UI 구현과 웹 표준을 중요하게 생각하는 김미르입니다.</p>
 						<p className="text">
-						새로운 기술과 트렌드를 배우는 것을 즐기고 꾸준히 성장하기 위해 노력하고 있으며,
+						새로운 기술과 트렌드를 배우는 것을 즐기고 꾸준히 성장하기 위해 노력하고 있으며
 						<br />
 						디자인, 개발, 기획 등 다양한 파트와의 원활한 협업과 커뮤니케이션을 통해 더 나은 결과물을
 						만들어왔습니다.
@@ -274,14 +274,6 @@ function App() {
 						항상 열린 마음으로 소통하며 팀워크를 중요하게 생각합니다.
 						</p>
 						<p className="text">앞으로도 더 나은 웹 서비스를 위해 끊임없이 배우고 도전하겠습니다.</p>
-						<a
-						href="https://www.notion.so/1f9c70dd46df807789f6e70710f2ed80"
-						target="_blank"
-						rel="noreferrer"
-						className="link"
-						>
-						자기소개 더보기
-						</a>
 
 						<div className="skill_wrap">
 							<h4 className="sub__title">SKILLS</h4>
