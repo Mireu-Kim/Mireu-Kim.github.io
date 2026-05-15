@@ -110,7 +110,7 @@ const works: Work[] = [
 		image: 'img_work_nhpay.png',
 		alt: 'nhpay',
 		hash: '#mobile',
-		title: '농협카드 통합 구축',
+		title: '농협카드 통합 플랫폼 구축',
 		date: '2024.02 ~ 2024.11',
 		detail: {
 			overview: 'NH농협카드와 NH Pay의 분산된 기능과 고객 데이터를 하나로 모으는 통합 구축 프로젝트로, 기존 앱의 부족했던 사용성을 개선하고 고객 친화적인 UXUI를 구축하였습니다.',
