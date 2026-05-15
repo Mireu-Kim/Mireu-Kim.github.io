@@ -419,7 +419,6 @@ function App() {
 					<div className="copy_wrap">
 						<p className="text">© 2026 All rights reserved</p>
 						<ul>
-							<li><a href="https://www.notion.so/1f9c70dd46df807789f6e70710f2ed80" target="_blank" rel="noreferrer">RESUME</a></li>
 							<li><a href="https://github.com/Mireu-Kim" target="_blank" rel="noreferrer">GITHUB</a></li>
 						</ul>
 					</div>
